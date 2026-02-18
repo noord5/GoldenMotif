@@ -55,10 +55,16 @@
     "priceLabel": "Price on request",
     "description": "A substantial travel companion in rich, full-grain leather. Features multiple external pockets, an internal laptop sleeve, and hand-burnished edges.",
     "images": [
-      "ASSESTS/Travel bag_9/1.png",
-      "ASSESTS/Travel bag_9/2.png",
-      "ASSESTS/Travel bag_9/3.png",
-      "ASSESTS/Travel bag_9/4.png"
+      "ASSESTS/Leather Bagpack (Unisex)/1.png",
+      "ASSESTS/Leather Bagpack (Unisex)/2.png",
+      "ASSESTS/Leather Bagpack (Unisex)/3.png",
+      "ASSESTS/Leather Bagpack (Unisex)/4.png",
+      "ASSESTS/Leather Bagpack (Unisex)/5.png",
+      "ASSESTS/Leather Bagpack (Unisex)/6.png",
+      "ASSESTS/Leather Bagpack (Unisex)/7.png",
+      "ASSESTS/Leather Bagpack (Unisex)/8.png",
+      "ASSESTS/Leather Bagpack (Unisex)/9.png",
+      "ASSESTS/Leather Bagpack (Unisex)/10.png"
     ],
     "material": "Saddle-Stitched Cowhide",
     "sku": "GM-TB-001",
@@ -75,10 +81,15 @@
     "priceLabel": "Price on request",
     "description": "A timeless leather handbag crafted from full-grain cowhide, featuring hand-stitched seams and polished brass hardware. The spacious interior accommodates daily essentials with elegance.",
     "images": [
-      "ASSESTS/Lady's handbag_11/1.png",
-      "ASSESTS/Lady's handbag_11/2.png",
-      "ASSESTS/Lady's handbag_11/3.png",
-      "ASSESTS/Lady's handbag_11/4.png"
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/1.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/2.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/3.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/4.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/5.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/6.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/7.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/8.png",
+      "ASSESTS/Leather Convertible Shoulder Bag & Backpack/9.png"
     ],
     "material": "Full-Grain Cowhide Leather",
     "sku": "GM-HB-001",
