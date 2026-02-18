@@ -1,6 +1,6 @@
 /* ========================================
    CONTACT.JS — Golden Motif
-   Form validation + success state
+   Form validation + email submission
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,10 +11,10 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (validateForm(form)) {
-      showSuccess(form);
+      await submitForm(form);
     }
   });
 
@@ -77,6 +77,49 @@ function setError(input, message) {
 }
 
 /**
+ * Submit form data to serverless API
+ */
+async function submitForm(form) {
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn ? submitBtn.textContent : '';
+
+  // Show loading state
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.style.opacity = '0.7';
+  }
+
+  // Gather form data
+  const data = {
+    name: form.querySelector('#contact-name')?.value.trim() || '',
+    email: form.querySelector('#contact-email')?.value.trim() || '',
+    company: form.querySelector('#contact-company')?.value.trim() || '',
+    interest: form.querySelector('#contact-interest')?.value || '',
+    message: form.querySelector('#contact-message')?.value.trim() || ''
+  };
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      showSuccess(form);
+    } else {
+      showFormError(form, submitBtn, originalText, result.error || 'Something went wrong. Please try again.');
+    }
+  } catch (err) {
+    console.error('Form submission error:', err);
+    showFormError(form, submitBtn, originalText, 'Network error. Please check your connection and try again.');
+  }
+}
+
+/**
  * Show success state
  */
 function showSuccess(form) {
@@ -88,4 +131,56 @@ function showSuccess(form) {
 
   // Scroll into view
   form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+/**
+ * Show error and restore button
+ */
+function showFormError(form, submitBtn, originalText, message) {
+  // Restore button
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
+    submitBtn.style.opacity = '1';
+  }
+
+  // Show error banner (create if not exist)
+  let errorBanner = form.querySelector('.contact-form__error-banner');
+  if (!errorBanner) {
+    errorBanner = document.createElement('div');
+    errorBanner.className = 'contact-form__error-banner';
+    errorBanner.style.cssText = `
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      color: #991b1b;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: fadeIn 0.3s ease;
+    `;
+    const fieldsContainer = form.querySelector('.contact-form__fields');
+    if (fieldsContainer) {
+      fieldsContainer.insertBefore(errorBanner, fieldsContainer.firstChild);
+    }
+  }
+
+  errorBanner.innerHTML = `
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="flex-shrink: 0;">
+      <circle cx="10" cy="10" r="10" fill="#fca5a5"/>
+      <path d="M10 6v5M10 13.5v.5" stroke="#991b1b" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <span>${message}</span>
+  `;
+  errorBanner.style.display = 'flex';
+
+  // Auto-hide after 8 seconds
+  setTimeout(() => {
+    if (errorBanner) {
+      errorBanner.style.display = 'none';
+    }
+  }, 8000);
 }
