@@ -407,8 +407,8 @@
   border-color: var(--clr-accent);
 }
 
-.product-gallery__main-nav.prev { left: -72px; }
-.product-gallery__main-nav.next { right: -72px; }
+.product-gallery__main-nav.prev { left: -80px; }
+.product-gallery__main-nav.next { right: -80px; }
 
 /* Responsive adjustments for external arrows */
 @media (max-width: 1200px) {
@@ -526,7 +526,7 @@
 .product-info__subtitle {
   display: block;
   font-family: var(--ff-body);
-  font-size: 0.52em;
+  font-size: 0.42em;
   font-weight: var(--fw-regular);
   color: #55524e;
   margin-top: 0.2rem;
