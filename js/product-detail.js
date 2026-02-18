@@ -55,13 +55,15 @@ function renderProduct(container, product) {
       <div class="product-detail__grid">
         <!-- Gallery -->
         <div class="product-gallery">
-          <div class="product-gallery__main ${fitClass}">
+          <div class="product-gallery__main-outer">
             <button class="product-gallery__main-nav prev" id="main-prev" aria-label="Previous image">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
             </button>
-            <img src="${mainImage}" alt="${product.name}" id="gallery-main-img">
+            <div class="product-gallery__main ${fitClass}">
+              <img src="${mainImage}" alt="${product.name}" id="gallery-main-img">
+            </div>
             <button class="product-gallery__main-nav next" id="main-next" aria-label="Next image">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </button>
           </div>
           
