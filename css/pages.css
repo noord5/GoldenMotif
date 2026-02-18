@@ -372,31 +372,34 @@
   margin-bottom: var(--space-md);
 }
 
-/* Main Image Navigation Arrows */
+/* Main Image Navigation Arrows - Modern Glassmorphism */
 .product-gallery__main-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--clr-border);
-  color: var(--clr-text);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--clr-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all var(--duration-fast);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
-  box-shadow: var(--shadow-sm);
+  opacity: 0.8;
 }
 
 .product-gallery__main-nav:hover {
-  background: #fff;
-  border-color: var(--clr-accent);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--clr-accent);
-  box-shadow: var(--shadow-md);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+  border-color: var(--clr-accent);
 }
 
 .product-gallery__main-nav.prev { left: 1rem; }
