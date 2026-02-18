@@ -129,6 +129,10 @@ function injectFooter() {
               ${Icons.phone}
               <span>+39 352 095 8384</span>
             </div>
+            <div class="footer__contact-item">
+              ${Icons.mapPin}
+              <span>Milan, Italy</span>
+            </div>
           </div>
         </div>
 
