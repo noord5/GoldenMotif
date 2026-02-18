@@ -104,6 +104,7 @@
     "name": "Wallet Clutch for Ladies",
     "category": "Clutches",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "An elegant wallet clutch designed for the modern woman. Features a spacious interior with card slots, a zip compartment, and a detachable wrist strap for versatile styling.",
     "images": [
       "ASSESTS/Wallet Clutch for Ladies/1.png",
@@ -130,10 +131,12 @@
     "priceLabel": "Price on request",
     "description": "An exquisite clutch for evening occasions, featuring hand-embossed detailing and a satin-lined interior. Includes a slim chain strap for hands-free elegance.",
     "images": [
-      "ASSESTS/Lady's purse green_7/1.png",
-      "ASSESTS/Lady's purse green_7/2.png",
-      "ASSESTS/Lady's purse green_7/3.png",
-      "ASSESTS/Lady's purse green_7/4.png"
+      "ASSESTS/Ladies Evening Bag/1.png",
+      "ASSESTS/Ladies Evening Bag/2.png",
+      "ASSESTS/Ladies Evening Bag/3.png",
+      "ASSESTS/Ladies Evening Bag/4.png",
+      "ASSESTS/Ladies Evening Bag/5.png",
+      "ASSESTS/Ladies Evening Bag/6.png"
     ],
     "material": "Embossed Calfskin",
     "sku": "GM-CL-001",

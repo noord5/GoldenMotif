@@ -41,7 +41,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 5, "slug": "wallet-clutch-for-ladies", "name": "Wallet Clutch for Ladies",
-    "category": "Clutches", "priceLabel": "Price on request",
+    "category": "Clutches", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "An elegant wallet clutch designed for the modern woman. Features a spacious interior with card slots, a zip compartment, and a detachable wrist strap for versatile styling.",
     "images": ["ASSESTS/Lady's clutch_11/1.png","ASSESTS/Lady's clutch_11/2.png","ASSESTS/Lady's clutch_11/3.png","ASSESTS/Lady's clutch_11/4.png"],
     "material": "Embossed Calfskin", "sku": "GM-CL-001", "featured": true,

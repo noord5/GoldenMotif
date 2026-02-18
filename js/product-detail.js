@@ -46,13 +46,15 @@ async function initProductDetail() {
 function renderProduct(container, product) {
   const mainImage =
     product.images && product.images[0] ? product.images[0] : "";
+  
+  const fitClass = product.imageFit === 'contain' ? 'object-contain' : '';
 
   container.innerHTML = `
     <div class="container">
       <div class="product-detail__grid">
         <!-- Gallery -->
         <div class="product-gallery">
-          <div class="product-gallery__main">
+          <div class="product-gallery__main ${fitClass}">
             <img src="${mainImage}" alt="${product.name}" id="gallery-main-img">
           </div>
           <div class="product-gallery__wrapper">

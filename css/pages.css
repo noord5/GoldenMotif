@@ -384,6 +384,11 @@
   transition: opacity var(--duration-normal) var(--ease-out);
 }
 
+.product-gallery__main.object-contain img {
+  object-fit: contain;
+  background-color: #F6F6F4; 
+}
+
 .product-gallery__wrapper {
   position: relative;
   display: flex;
