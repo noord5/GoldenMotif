@@ -94,7 +94,7 @@ function renderProduct(container, product) {
           <span class="product-info__category">${product.category}</span>
           <h1 class="product-info__name">
             ${product.name}
-            ${product.subName ? `<span class="product-info__subtitle" style="display:block; font-size: 0.6em; font-weight: 400; margin-top: 0.3rem;">${product.subName}</span>` : ''}
+            ${product.subName ? `<span class="product-info__subtitle">${product.subName}</span>` : ''}
           </h1>
           <span class="product-info__price">${product.priceLabel}</span>
           <p class="product-info__desc">${product.description}</p>
@@ -116,7 +116,7 @@ function renderProduct(container, product) {
 
           <div class="product-info__buttons">
             <a href="contact.html" class="btn btn--primary">
-              ${Icons.mail} Request Quote
+              ${Icons.mail} Partner with Us
             </a>
           </div>
 
