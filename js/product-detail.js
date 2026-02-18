@@ -47,6 +47,7 @@ function renderProduct(container, product) {
   const mainImage =
     product.images && product.images[0] ? product.images[0] : "";
   
+  
   const fitClass = product.imageFit === 'contain' ? 'object-contain' : '';
 
   container.innerHTML = `
@@ -91,7 +92,10 @@ function renderProduct(container, product) {
           </nav>
 
           <span class="product-info__category">${product.category}</span>
-          <h1 class="product-info__name">${product.name}</h1>
+          <h1 class="product-info__name">
+            ${product.name}
+            ${product.subName ? `<span class="product-info__subtitle" style="display:block; font-size: 0.6em; font-weight: 400; margin-top: 0.3rem;">${product.subName}</span>` : ''}
+          </h1>
           <span class="product-info__price">${product.priceLabel}</span>
           <p class="product-info__desc">${product.description}</p>
 
@@ -125,8 +129,10 @@ function renderProduct(container, product) {
               </button>
               <div class="accordion__content">
                 <div class="accordion__content-inner">
-                  <p>${product.description}</p>
-                  <p style="margin-top: 0.75rem;">Each piece is individually inspected for quality and ships with a certificate of authenticity. Our artisans take pride in every stitch, ensuring that your Golden Motif product will age gracefully and become a trusted companion for years to come.</p>
+                  ${product.productInfo || `
+                    <p>${product.description}</p>
+                    <p style="margin-top: 0.75rem;">Each piece is individually inspected for quality and ships with a certificate of authenticity. Our artisans take pride in every stitch, ensuring that your Golden Motif product will age gracefully and become a trusted companion for years to come.</p>
+                  `}
                 </div>
               </div>
             </div>
@@ -138,8 +144,10 @@ function renderProduct(container, product) {
               </button>
               <div class="accordion__content">
                 <div class="accordion__content-inner">
-                  <p><strong>Material:</strong> ${product.material}</p>
-                  <p style="margin-top: 0.75rem;">To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>
+                  ${product.materialCare || `
+                    <p><strong>Material:</strong> ${product.material}</p>
+                    <p style="margin-top: 0.75rem;">To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>
+                  `}
                 </div>
               </div>
             </div>
