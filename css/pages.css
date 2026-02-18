@@ -526,11 +526,12 @@
 .product-info__subtitle {
   display: block;
   font-family: var(--ff-body);
-  font-size: 0.6em;
-  font-weight: var(--fw-medium);
-  color: #4a4a44;
-  margin-top: 0.25rem;
+  font-size: 0.52em;
+  font-weight: var(--fw-regular);
+  color: #55524e;
+  margin-top: 0.2rem;
   letter-spacing: var(--ls-normal);
+  line-height: 1.4;
 }
 
 .product-info__price {
