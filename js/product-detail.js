@@ -145,7 +145,7 @@ function renderProduct(container, product) {
               <div class="accordion__content">
                 <div class="accordion__content-inner">
                   ${product.materialInfo || `<p><strong>Material:</strong> ${product.material}</p>`}
-                  ${product.careInfo || `<p style="margin-top: 0.75rem;">To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>`}
+                  ${product.careInfo || `<p style="margin-top: 0.75rem;"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>`}
                 </div>
               </div>
             </div>
