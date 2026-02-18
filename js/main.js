@@ -58,12 +58,7 @@ function injectHeader() {
         </div>
 
         <div class="navbar__actions">
-          <button class="navbar__icon-btn" aria-label="Search products" title="Search">
-            ${Icons.search}
-          </button>
-          <button class="navbar__icon-btn" aria-label="Wishlist" title="Wishlist">
-            ${Icons.heart}
-          </button>
+
           <a href="contact.html" class="btn btn--primary btn--sm">Request Catalogue</a>
           <button class="navbar__menu-btn" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
