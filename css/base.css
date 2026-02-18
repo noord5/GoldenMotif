@@ -1,0 +1,159 @@
+/* ========================================
+   BASE.CSS — Golden Motif
+   Body defaults, typography, global styles
+   ======================================== */
+
+/* ── Google Fonts Import ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+  line-height: 1.7;
+  letter-spacing: var(--ls-normal);
+  overflow-x: hidden;
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-text);
+  line-height: 1.15;
+  letter-spacing: var(--ls-tight);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+/* ── Body Text ── */
+p {
+  color: var(--clr-text-light);
+  line-height: 1.8;
+  max-width: 68ch;
+}
+
+.text-accent {
+  font-family: var(--ff-accent);
+  font-style: italic;
+  color: var(--clr-accent);
+}
+
+.text-muted {
+  color: var(--clr-text-muted);
+}
+
+.text-small {
+  font-size: var(--fs-small);
+}
+
+.text-xs {
+  font-size: var(--fs-xs);
+}
+
+.text-center { text-align: center; }
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  font-size: var(--fs-tag);
+  font-weight: var(--fw-medium);
+}
+
+/* ── Links ── */
+a {
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+a:hover {
+  color: var(--clr-accent);
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--clr-accent);
+  color: var(--clr-text-inverse);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-border);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-text-muted);
+}
+
+/* ── Focus States ── */
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── HR ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-border);
+  margin: var(--space-xl) 0;
+}
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  background: var(--clr-primary);
+  color: var(--clr-text-inverse);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  z-index: var(--z-toast);
+  font-size: var(--fs-small);
+  transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}
+
+/* ── Image helpers ── */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Lazy load fade-in — only for JS-managed data-src images */
+img[data-src] {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-out);
+}
+
+img[data-src].loaded,
+img.loaded {
+  opacity: 1;
+}
+
+/* Ensure all regular images are always visible */
+img {
+  opacity: 1;
+}
