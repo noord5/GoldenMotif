@@ -168,7 +168,7 @@ function renderProduct(container, product) {
               </button>
               <div class="accordion__content">
                 <div class="accordion__content-inner">
-                  <p>Standard orders ship within 5–7 business days. Made-to-order items require 3–4 weeks for crafting. We ship worldwide via insured courier. Contact us for bulk or custom orders with specific delivery requirements.</p>
+                  <p>Standard orders ship within 15–20 business days. Made-to-order items require 3–4 weeks for crafting. We ship worldwide via insured courier. Contact us for bulk or custom orders with specific delivery requirements.</p>
                 </div>
               </div>
             </div>
