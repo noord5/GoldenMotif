@@ -185,10 +185,12 @@
     "imageFit": "contain",
     "description": "A waterproof-lined leather toiletry case with a wide-mouth opening, interior mesh pockets, and a sturdy carry handle. Ideal for the well-traveled gentleman.",
     "images": [
-      "ASSESTS/Shaving Kit large_9/1.png",
-      "ASSESTS/Shaving Kit large_9/2.png",
-      "ASSESTS/Shaving Kit large_9/3.png",
-      "ASSESTS/Shaving Kit large_9/4.png"
+      "ASSESTS/Luxury Toiletries Pouch - Large/1.png",
+      "ASSESTS/Luxury Toiletries Pouch - Large/2.png",
+      "ASSESTS/Luxury Toiletries Pouch - Large/3.png",
+      "ASSESTS/Luxury Toiletries Pouch - Large/4.png",
+      "ASSESTS/Luxury Toiletries Pouch - Large/5.png",
+      "ASSESTS/Luxury Toiletries Pouch - Large/6.png"
     ],
     "material": "Waxed Canvas & Leather",
     "sku": "GM-SK-001",
@@ -206,10 +208,12 @@
     "imageFit": "contain",
     "description": "A compact and lightweight version of our signature toiletry case, perfect for weekend getaways. Lined with water-resistant fabric and secured with a YKK brass zipper.",
     "images": [
-      "ASSESTS/Shaving Kit medium_6/1.png",
-      "ASSESTS/Shaving Kit medium_6/2.png",
-      "ASSESTS/Shaving Kit medium_6/3.png",
-      "ASSESTS/Shaving Kit medium_6/4.png"
+      "ASSESTS/Luxury Toiletries Pouch - Medium/1.png",
+      "ASSESTS/Luxury Toiletries Pouch - Medium/2.png",
+      "ASSESTS/Luxury Toiletries Pouch - Medium/3.png",
+      "ASSESTS/Luxury Toiletries Pouch - Medium/4.png",
+      "ASSESTS/Luxury Toiletries Pouch - Medium/5.png",
+      "ASSESTS/Luxury Toiletries Pouch - Medium/6.png"
     ],
     "material": "Top-Grain Leather",
     "sku": "GM-SK-002",
@@ -227,10 +231,11 @@
     "imageFit": "contain",
     "description": "A timeless moto-inspired jacket crafted from supple lambskin leather with satin lining. Features antique copper hardware and an adjustable hem for a perfect fit.",
     "images": [
-      "ASSESTS/Jacket_5/1.png",
-      "ASSESTS/Jacket_5/2.png",
-      "ASSESTS/Jacket_5/3.png",
-      "ASSESTS/Jacket_5/4.png"
+      "ASSESTS/Men's Leather Jacket/1.png",
+      "ASSESTS/Men's Leather Jacket/2.png",
+      "ASSESTS/Men's Leather Jacket/3.png",
+      "ASSESTS/Men's Leather Jacket/4.png",
+      "ASSESTS/Men's Leather Jacket/5.png"
     ],
     "material": "Lambskin Leather",
     "sku": "GM-JK-001",
@@ -248,10 +253,9 @@
     "imageFit": "contain",
     "description": "Slim bifold wallet with RFID-blocking lining, six card slots, and a full-length bill compartment. Precision-cut from a single hide for seamless quality.",
     "images": [
-      "ASSESTS/Wallets_7/1.png",
-      "ASSESTS/Wallets_7/2.png",
-      "ASSESTS/Wallets_7/3.png",
-      "ASSESTS/Wallets_7/4.png"
+      "ASSESTS/Men's Leather Wallet - Brown/1.png",
+      "ASSESTS/Men's Leather Wallet - Brown/2.png",
+      "ASSESTS/Men's Leather Wallet - Brown/3.png"
     ],
     "material": "Nappa Leather",
     "sku": "GM-WL-001",
@@ -269,7 +273,10 @@
     "imageFit": "contain",
     "description": "A sleek black leather wallet crafted from premium full-grain leather with a refined finish. Features multiple card slots, a bill compartment, and RFID-blocking technology for everyday sophistication.",
     "images": [
-      "ASSESTS/Wallets_7/2.png"
+      "ASSESTS/Men's Leather Wallet - Black/1.png",
+      "ASSESTS/Men's Leather Wallet - Black/2.png",
+      "ASSESTS/Men's Leather Wallet - Black/3.png",
+      "ASSESTS/Men's Leather Wallet - Black/4.png"
     ],
     "material": "Full-Grain Leather",
     "sku": "GM-WL-002",
@@ -287,10 +294,13 @@
     "imageFit": "contain",
     "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.",
     "images": [
-      "ASSESTS/Waist belts_9/1.png",
-      "ASSESTS/Waist belts_9/2.png",
-      "ASSESTS/Waist belts_9/3.png",
-      "ASSESTS/Waist belts_9/4.png"
+      "ASSESTS/Men's Leather Belt/1.png",
+      "ASSESTS/Men's Leather Belt/2.png",
+      "ASSESTS/Men's Leather Belt/3.png",
+      "ASSESTS/Men's Leather Belt/4.png",
+      "ASSESTS/Men's Leather Belt/5.png",
+      "ASSESTS/Men's Leather Belt/6.png",
+      "ASSESTS/Men's Leather Belt/7.png"
     ],
     "material": "Bridle Leather",
     "sku": "GM-BT-001",
