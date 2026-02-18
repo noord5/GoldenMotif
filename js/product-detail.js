@@ -56,26 +56,25 @@ function renderProduct(container, product) {
         <!-- Gallery -->
         <div class="product-gallery">
           <div class="product-gallery__main ${fitClass}">
+            <button class="product-gallery__main-nav prev" id="main-prev" aria-label="Previous image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
             <img src="${mainImage}" alt="${product.name}" id="gallery-main-img">
+            <button class="product-gallery__main-nav next" id="main-next" aria-label="Next image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
           </div>
-          <div class="product-gallery__wrapper">
-            <button class="product-gallery__nav" id="gallery-prev" aria-label="Previous image">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-            <div class="product-gallery__thumbs" id="gallery-thumbs">
-              ${(product.images || [])
-                .map(
-                  (img, i) => `
-                <button class="product-gallery__thumb ${i === 0 ? "active" : ""}" data-img="${img}" aria-label="View image ${i + 1}">
-                  <img src="${img}" alt="${product.name} view ${i + 1}" loading="lazy">
-                </button>
-              `,
-                )
-                .join("")}
-            </div>
-            <button class="product-gallery__nav" id="gallery-next" aria-label="Next image">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+          
+          <div class="product-gallery__thumbs" id="gallery-thumbs">
+            ${(product.images || [])
+              .map(
+                (img, i) => `
+              <button class="product-gallery__thumb ${i === 0 ? "active" : ""}" data-img="${img}" data-index="${i}" aria-label="View image ${i + 1}">
+                <img src="${img}" alt="${product.name} view ${i + 1}" loading="lazy">
+              </button>
+            `,
+              )
+              .join("")}
           </div>
         </div>
 
@@ -116,7 +115,7 @@ function renderProduct(container, product) {
 
           <div class="product-info__buttons">
             <a href="contact.html" class="btn btn--primary">
-              ${Icons.mail} Request Wholesale Price
+              ${Icons.mail} REQUEST WHOLESALE PRICE
             </a>
           </div>
 
@@ -174,19 +173,21 @@ function renderProduct(container, product) {
 function initGallery() {
   const thumbsContainer = document.getElementById("gallery-thumbs");
   const mainImg = document.getElementById("gallery-main-img");
-  const prevBtn = document.getElementById("gallery-prev");
-  const nextBtn = document.getElementById("gallery-next");
+  const mainPrev = document.getElementById("main-prev");
+  const mainNext = document.getElementById("main-next");
   
   if (!thumbsContainer || !mainImg) return;
 
-  // Thumbnail Click
-  thumbsContainer.addEventListener("click", (e) => {
-    const thumb = e.target.closest(".product-gallery__thumb");
+  const thumbs = Array.from(thumbsContainer.querySelectorAll(".product-gallery__thumb"));
+  let currentIndex = 0;
+
+  const updateGallery = (index) => {
+    currentIndex = index;
+    const thumb = thumbs[currentIndex];
     if (!thumb) return;
 
     const imgSrc = thumb.dataset.img;
-    if (!imgSrc) return;
-
+    
     // Update main image with fade
     mainImg.style.opacity = "0";
     setTimeout(() => {
@@ -195,40 +196,36 @@ function initGallery() {
     }, 200);
 
     // Update active thumb
-    thumbsContainer
-      .querySelectorAll(".product-gallery__thumb")
-      .forEach((t) => t.classList.remove("active"));
+    thumbs.forEach((t) => t.classList.remove("active"));
     thumb.classList.add("active");
+    
+    // Smooth scroll thumbnail into view if needed
+    thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  };
+
+  // Thumbnail Click
+  thumbsContainer.addEventListener("click", (e) => {
+    const thumb = e.target.closest(".product-gallery__thumb");
+    if (!thumb) return;
+    const index = thumbs.indexOf(thumb);
+    if (index !== -1) updateGallery(index);
   });
 
-  // Navigation Arrows
-  if (prevBtn && nextBtn) {
-    const scrollAmount = 84; // 72px width + 12px gap (0.75rem)
-
-    const updateArrowState = () => {
-      prevBtn.disabled = thumbsContainer.scrollLeft <= 0;
-      nextBtn.disabled = 
-        Math.abs(thumbsContainer.scrollLeft + thumbsContainer.clientWidth - thumbsContainer.scrollWidth) < 1;
-    };
-
-    // Initial check
-    // Wait for images to load slightly or layout to settle
-    setTimeout(updateArrowState, 100);
-    thumbsContainer.addEventListener('scroll', debounce(updateArrowState, 50));
-
-    prevBtn.addEventListener("click", () => {
-      thumbsContainer.scrollBy({ left: -scrollAmount * 4, behavior: "smooth" });
+  // Main Nav Arrows
+  if (mainPrev) {
+    mainPrev.addEventListener("click", () => {
+      let newIndex = currentIndex - 1;
+      if (newIndex < 0) newIndex = thumbs.length - 1;
+      updateGallery(newIndex);
     });
+  }
 
-    nextBtn.addEventListener("click", () => {
-      thumbsContainer.scrollBy({ left: scrollAmount * 4, behavior: "smooth" });
+  if (mainNext) {
+    mainNext.addEventListener("click", () => {
+      let newIndex = currentIndex + 1;
+      if (newIndex >= thumbs.length) newIndex = 0;
+      updateGallery(newIndex);
     });
-    
-    // Check if we even need arrows (if content fits)
-    if (thumbsContainer.scrollWidth <= thumbsContainer.clientWidth) {
-        prevBtn.style.display = 'none';
-        nextBtn.style.display = 'none';
-    }
   }
 }
 
