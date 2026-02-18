@@ -382,56 +382,11 @@
   filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.15));
 }
 
-/* Gallery Wrapper */
-.product-gallery__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
 .product-gallery__thumbs {
   display: flex;
   gap: var(--space-sm);
   overflow-x: auto;
-  scroll-behavior: smooth;
   padding-bottom: var(--space-xs);
-  flex: 1;
-  /* Hide scrollbar */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.product-gallery__thumbs::-webkit-scrollbar {
-  display: none;
-}
-
-.product-gallery__nav {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--clr-border);
-  color: var(--clr-text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--duration-fast);
-  opacity: 0.5;
-  flex-shrink: 0;
-}
-
-.product-gallery__nav:hover {
-  opacity: 1;
-  background: #fff;
-  border-color: var(--clr-accent);
-}
-
-.product-gallery__nav:disabled {
-  opacity: 0.2;
-  cursor: default;
-  pointer-events: none;
 }
 
 .product-gallery__thumb {
@@ -837,8 +792,54 @@
   margin-bottom: var(--space-md);
 }
 
-.page-404__text {
-  margin-inline: auto;
-  margin-bottom: var(--space-xl);
-  max-width: 40ch;
+
+/* ═══════════════════════════════════════
+   UPDATED PRODUCT GALLERY STYLES
+   ═══════════════════════════════════════ */
+.product-gallery__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Override previous definition to add scrolling behavior */
+.product-gallery__thumbs {
+  scroll-behavior: smooth;
+  flex: 1;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-gallery__thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.product-gallery__nav {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--clr-border);
+  color: var(--clr-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.product-gallery__nav:hover {
+  opacity: 1;
+  background: #fff;
+  border-color: var(--clr-accent);
+}
+
+.product-gallery__nav:disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
 }
