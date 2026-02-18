@@ -59,7 +59,7 @@ function injectHeader() {
 
         <div class="navbar__actions">
 
-          <a href="contact.html" class="btn btn--primary btn--sm">Partner with Us</a>
+          <a href="contact.html" class="btn btn--primary btn--sm">Request Wholesale Price</a>
           <button class="navbar__menu-btn" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
@@ -72,7 +72,7 @@ function injectHeader() {
       <a href="catalogue.html" class="mobile-nav__link">Catalogue</a>
       <a href="about.html" class="mobile-nav__link">About</a>
       <a href="contact.html" class="mobile-nav__link">Contact</a>
-      <a href="contact.html" class="btn btn--primary mt-lg">Partner with Us</a>
+      <a href="contact.html" class="btn btn--primary mt-lg">Request Wholesale Price</a>
     </div>
   `;
 }

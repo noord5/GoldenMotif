@@ -511,19 +511,23 @@
 .product-info__subtitle {
   display: block;
   font-family: var(--ff-body);
-  font-size: 0.55em;
-  font-weight: var(--fw-regular);
-  color: var(--clr-text-muted);
+  font-size: 0.6em;
+  font-weight: var(--fw-medium);
+  color: #4a4a44;
   margin-top: 0.25rem;
   letter-spacing: var(--ls-normal);
 }
 
 .product-info__price {
   font-family: var(--ff-heading);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h4);
   font-weight: var(--fw-medium);
   color: var(--clr-accent);
   margin-bottom: var(--space-xs);
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 .product-info__desc {

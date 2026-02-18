@@ -116,7 +116,7 @@ function renderProduct(container, product) {
 
           <div class="product-info__buttons">
             <a href="contact.html" class="btn btn--primary">
-              ${Icons.mail} Partner with Us
+              ${Icons.mail} Request Wholesale Price
             </a>
           </div>
 
