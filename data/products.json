@@ -5,6 +5,7 @@
     "name": "Traveler Leather Duffle",
     "category": "Duffles",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "Built for the discerning traveler, this full-grain leather duffle features reinforced handles, a detachable shoulder strap, and a generous interior with a shoe compartment.",
     "images": [
       "ASSESTS/Duffle bag_8/1.png",
@@ -25,6 +26,7 @@
     "name": "Leather Apron",
     "category": "Aprons",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "Designed for craftspeople and culinary artists, this heavy-duty leather apron features adjustable cross-back straps and riveted tool pockets.",
     "images": [
       "ASSESTS/Aprons/1.png",
@@ -53,6 +55,7 @@
     "name": "Leather Backpack (Unisex)",
     "category": "Travel Bags",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A substantial travel companion in rich, full-grain leather. Features multiple external pockets, an internal laptop sleeve, and hand-burnished edges.",
     "images": [
       "ASSESTS/Leather Bagpack (Unisex)/1.png",
@@ -79,6 +82,7 @@
     "name": "Leather Convertible Shoulder Bag & Backpack",
     "category": "Handbags",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A timeless leather handbag crafted from full-grain cowhide, featuring hand-stitched seams and polished brass hardware. The spacious interior accommodates daily essentials with elegance.",
     "images": [
       "ASSESTS/Leather Convertible Shoulder Bag & Backpack/1.png",
@@ -129,6 +133,7 @@
     "name": "Ladies Evening Bag",
     "category": "Clutches",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "An exquisite clutch for evening occasions, featuring hand-embossed detailing and a satin-lined interior. Includes a slim chain strap for hands-free elegance.",
     "images": [
       "ASSESTS/Ladies Evening Bag/1.png",
@@ -151,6 +156,7 @@
     "name": "Crossbody Bag (Unisex)",
     "category": "Crossbody",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A compact crossbody designed for the modern urbanite. Adjustable strap, secure magnetic closure, and multiple interior pockets keep everything organized.",
     "images": [
       "ASSESTS/Crossbody Bag (Unisex)/1.png",
@@ -176,6 +182,7 @@
     "name": "Luxury Toiletries Pouch - Large",
     "category": "Travel Bags",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A waterproof-lined leather toiletry case with a wide-mouth opening, interior mesh pockets, and a sturdy carry handle. Ideal for the well-traveled gentleman.",
     "images": [
       "ASSESTS/Shaving Kit large_9/1.png",
@@ -196,6 +203,7 @@
     "name": "Luxury Toiletries Pouch - Medium",
     "category": "Travel Bags",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A compact and lightweight version of our signature toiletry case, perfect for weekend getaways. Lined with water-resistant fabric and secured with a YKK brass zipper.",
     "images": [
       "ASSESTS/Shaving Kit medium_6/1.png",
@@ -216,6 +224,7 @@
     "name": "Men's Leather Jacket",
     "category": "Jackets",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A timeless moto-inspired jacket crafted from supple lambskin leather with satin lining. Features antique copper hardware and an adjustable hem for a perfect fit.",
     "images": [
       "ASSESTS/Jacket_5/1.png",
@@ -236,6 +245,7 @@
     "name": "Men's Leather Wallet - Brown",
     "category": "Wallets",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "Slim bifold wallet with RFID-blocking lining, six card slots, and a full-length bill compartment. Precision-cut from a single hide for seamless quality.",
     "images": [
       "ASSESTS/Wallets_7/1.png",
@@ -256,6 +266,7 @@
     "name": "Men's Leather Wallet - Black",
     "category": "Wallets",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A sleek black leather wallet crafted from premium full-grain leather with a refined finish. Features multiple card slots, a bill compartment, and RFID-blocking technology for everyday sophistication.",
     "images": [
       "ASSESTS/Wallets_7/2.png"
@@ -273,6 +284,7 @@
     "name": "Men's Leather Belt",
     "category": "Belts",
     "priceLabel": "Price on request",
+    "imageFit": "contain",
     "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.",
     "images": [
       "ASSESTS/Waist belts_9/1.png",

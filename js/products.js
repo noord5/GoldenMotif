@@ -9,7 +9,7 @@
 const _INLINE_PRODUCTS = [
   {
     "id": 1, "slug": "voyager-duffle-bag", "name": "Traveler Leather Duffle",
-    "category": "Duffles", "priceLabel": "Price on request",
+    "category": "Duffles", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "Built for the discerning traveler, this full-grain leather duffle features reinforced handles, a detachable shoulder strap, and a generous interior with a shoe compartment.",
     "images": ["ASSESTS/Duffle bag_8/1.png","ASSESTS/Duffle bag_8/2.png","ASSESTS/Duffle bag_8/3.png","ASSESTS/Duffle bag_8/4.png"],
     "material": "Full-Grain Buffalo Leather", "sku": "GM-DF-001", "featured": true,
@@ -17,7 +17,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 2, "slug": "leather-apron", "name": "Leather Apron",
-    "category": "Aprons", "priceLabel": "Price on request",
+    "category": "Aprons", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "Designed for craftspeople and culinary artists, this heavy-duty leather apron features adjustable cross-back straps and riveted tool pockets.",
     "images": ["ASSESTS/Aprons/1.png","ASSESTS/Aprons/2.png","ASSESTS/Aprons/3.png","ASSESTS/Aprons/4.png"],
     "material": "Oiled Pull-Up Leather", "sku": "GM-AP-001", "featured": true,
@@ -25,7 +25,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 3, "slug": "heritage-travel-bag", "name": "Leather Backpack (Unisex)",
-    "category": "Travel Bags", "priceLabel": "Price on request",
+    "category": "Travel Bags", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A substantial travel companion in rich, full-grain leather. Features multiple external pockets, an internal laptop sleeve, and hand-burnished edges.",
     "images": ["ASSESTS/Travel bag_9/1.png","ASSESTS/Travel bag_9/2.png","ASSESTS/Travel bag_9/3.png","ASSESTS/Travel bag_9/4.png"],
     "material": "Saddle-Stitched Cowhide", "sku": "GM-TB-001", "featured": true,
@@ -33,7 +33,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 4, "slug": "classic-leather-handbag", "name": "Leather Convertible Shoulder Bag & Backpack",
-    "category": "Handbags", "priceLabel": "Price on request",
+    "category": "Handbags", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A timeless leather handbag crafted from full-grain cowhide, featuring hand-stitched seams and polished brass hardware. The spacious interior accommodates daily essentials with elegance.",
     "images": ["ASSESTS/Lady's handbag_11/1.png","ASSESTS/Lady's handbag_11/2.png","ASSESTS/Lady's handbag_11/3.png","ASSESTS/Lady's handbag_11/4.png"],
     "material": "Full-Grain Cowhide Leather", "sku": "GM-HB-001", "featured": true,
@@ -49,7 +49,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 6, "slug": "evening-clutch", "name": "Ladies Evening Bag",
-    "category": "Clutches", "priceLabel": "Price on request",
+    "category": "Clutches", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "An exquisite clutch for evening occasions, featuring hand-embossed detailing and a satin-lined interior. Includes a slim chain strap for hands-free elegance.",
     "images": ["ASSESTS/Lady's purse green_7/1.png","ASSESTS/Lady's purse green_7/2.png","ASSESTS/Lady's purse green_7/3.png","ASSESTS/Lady's purse green_7/4.png"],
     "material": "Smooth Calfskin Leather", "sku": "GM-CL-002", "featured": false,
@@ -57,7 +57,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 7, "slug": "urban-crossbody-bag", "name": "Crossbody Bag (Unisex)",
-    "category": "Crossbody", "priceLabel": "Price on request",
+    "category": "Crossbody", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A compact crossbody designed for the modern urbanite. Adjustable strap, secure magnetic closure, and multiple interior pockets keep everything organized.",
     "images": ["ASSESTS/Crossbody bag_8/1.png","ASSESTS/Crossbody bag_8/2.png","ASSESTS/Crossbody bag_8/3.png","ASSESTS/Crossbody bag_8/4.png"],
     "material": "Pebbled Calfskin Leather", "sku": "GM-CB-001", "featured": true,
@@ -65,7 +65,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 8, "slug": "premium-shaving-kit", "name": "Luxury Toiletries Pouch - Large",
-    "category": "Travel Bags", "priceLabel": "Price on request",
+    "category": "Travel Bags", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A waterproof-lined leather toiletry case with a wide-mouth opening, interior mesh pockets, and a sturdy carry handle. Ideal for the well-traveled gentleman.",
     "images": ["ASSESTS/Shaving Kit large_9/1.png","ASSESTS/Shaving Kit large_9/2.png","ASSESTS/Shaving Kit large_9/3.png","ASSESTS/Shaving Kit large_9/4.png"],
     "material": "Waxed Canvas & Leather", "sku": "GM-SK-001", "featured": false,
@@ -73,7 +73,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 9, "slug": "compact-toiletry-case", "name": "Luxury Toiletries Pouch - Medium",
-    "category": "Travel Bags", "priceLabel": "Price on request",
+    "category": "Travel Bags", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A compact and lightweight version of our signature toiletry case, perfect for weekend getaways. Lined with water-resistant fabric and secured with a YKK brass zipper.",
     "images": ["ASSESTS/Shaving Kit medium_6/1.png","ASSESTS/Shaving Kit medium_6/2.png","ASSESTS/Shaving Kit medium_6/3.png","ASSESTS/Shaving Kit medium_6/4.png"],
     "material": "Top-Grain Leather", "sku": "GM-SK-002", "featured": false,
@@ -81,7 +81,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 10, "slug": "heritage-leather-jacket", "name": "Men's Leather Jacket",
-    "category": "Jackets", "priceLabel": "Price on request",
+    "category": "Jackets", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A timeless moto-inspired jacket crafted from supple lambskin leather with satin lining. Features antique copper hardware and an adjustable hem for a perfect fit.",
     "images": ["ASSESTS/Jacket_5/1.png","ASSESTS/Jacket_5/2.png","ASSESTS/Jacket_5/3.png","ASSESTS/Jacket_5/4.png"],
     "material": "Lambskin Leather", "sku": "GM-JK-001", "featured": false,
@@ -89,7 +89,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 11, "slug": "executive-bifold-wallet", "name": "Men's Leather Wallet - Brown",
-    "category": "Wallets", "priceLabel": "Price on request",
+    "category": "Wallets", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "Slim bifold wallet with RFID-blocking lining, six card slots, and a full-length bill compartment. Precision-cut from a single hide for seamless quality.",
     "images": ["ASSESTS/Wallets_7/1.png","ASSESTS/Wallets_7/2.png","ASSESTS/Wallets_7/3.png","ASSESTS/Wallets_7/4.png"],
     "material": "Nappa Leather", "sku": "GM-WL-001", "featured": true,
@@ -97,7 +97,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 12, "slug": "mens-leather-wallet-black", "name": "Men's Leather Wallet - Black",
-    "category": "Wallets", "priceLabel": "Price on request",
+    "category": "Wallets", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A sleek black leather wallet crafted from premium full-grain leather with a refined finish. Features multiple card slots, a bill compartment, and RFID-blocking technology for everyday sophistication.",
     "images": ["ASSESTS/Wallets_7/2.png"],
     "material": "Full-Grain Leather", "sku": "GM-WL-002", "featured": false,
@@ -105,7 +105,7 @@ const _INLINE_PRODUCTS = [
   },
   {
     "id": 13, "slug": "mens-leather-belt", "name": "Men's Leather Belt",
-    "category": "Belts", "priceLabel": "Price on request",
+    "category": "Belts", "priceLabel": "Price on request", "imageFit": "contain",
     "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.",
     "images": ["ASSESTS/Waist belts_9/1.png","ASSESTS/Waist belts_9/2.png","ASSESTS/Waist belts_9/3.png","ASSESTS/Waist belts_9/4.png"],
     "material": "Bridle Leather", "sku": "GM-BT-001", "featured": false,
