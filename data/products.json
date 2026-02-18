@@ -153,10 +153,15 @@
     "priceLabel": "Price on request",
     "description": "A compact crossbody designed for the modern urbanite. Adjustable strap, secure magnetic closure, and multiple interior pockets keep everything organized.",
     "images": [
-      "ASSESTS/Crossbody bag_8/1.png",
-      "ASSESTS/Crossbody bag_8/2.png",
-      "ASSESTS/Crossbody bag_8/3.png",
-      "ASSESTS/Crossbody bag_8/4.png"
+      "ASSESTS/Crossbody Bag (Unisex)/1.png",
+      "ASSESTS/Crossbody Bag (Unisex)/2.png",
+      "ASSESTS/Crossbody Bag (Unisex)/3.png",
+      "ASSESTS/Crossbody Bag (Unisex)/4.png",
+      "ASSESTS/Crossbody Bag (Unisex)/5.png",
+      "ASSESTS/Crossbody Bag (Unisex)/6.png",
+      "ASSESTS/Crossbody Bag (Unisex)/7.png",
+      "ASSESTS/Crossbody Bag (Unisex)/8.png",
+      "ASSESTS/Crossbody Bag (Unisex)/9.png"
     ],
     "material": "Pebbled Calfskin Leather",
     "sku": "GM-CB-001",
