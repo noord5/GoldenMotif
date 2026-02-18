@@ -139,24 +139,13 @@ function renderProduct(container, product) {
 
             <div class="accordion__item">
               <button class="accordion__trigger" aria-expanded="false">
-                Materials
+                Materials &amp; Care
                 <span class="accordion__icon"></span>
               </button>
               <div class="accordion__content">
                 <div class="accordion__content-inner">
                   ${product.materialInfo || `<p><strong>Material:</strong> ${product.material}</p>`}
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion__item">
-              <button class="accordion__trigger" aria-expanded="false">
-                Material Care
-                <span class="accordion__icon"></span>
-              </button>
-              <div class="accordion__content">
-                <div class="accordion__content-inner">
-                  ${product.careInfo || `<p>To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>`}
+                  ${product.careInfo || `<p style="margin-top: 0.75rem;">To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>`}
                 </div>
               </div>
             </div>
