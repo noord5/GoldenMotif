@@ -55,16 +55,24 @@ function renderProduct(container, product) {
           <div class="product-gallery__main">
             <img src="${mainImage}" alt="${product.name}" id="gallery-main-img">
           </div>
-          <div class="product-gallery__thumbs" id="gallery-thumbs">
-            ${(product.images || [])
-              .map(
-                (img, i) => `
-              <button class="product-gallery__thumb ${i === 0 ? "active" : ""}" data-img="${img}" aria-label="View image ${i + 1}">
-                <img src="${img}" alt="${product.name} view ${i + 1}" loading="lazy">
-              </button>
-            `,
-              )
-              .join("")}
+          <div class="product-gallery__wrapper">
+            <button class="product-gallery__nav" id="gallery-prev" aria-label="Previous image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="product-gallery__thumbs" id="gallery-thumbs">
+              ${(product.images || [])
+                .map(
+                  (img, i) => `
+                <button class="product-gallery__thumb ${i === 0 ? "active" : ""}" data-img="${img}" aria-label="View image ${i + 1}">
+                  <img src="${img}" alt="${product.name} view ${i + 1}" loading="lazy">
+                </button>
+              `,
+                )
+                .join("")}
+            </div>
+            <button class="product-gallery__nav" id="gallery-next" aria-label="Next image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
           </div>
         </div>
 
@@ -153,14 +161,18 @@ function renderProduct(container, product) {
 }
 
 /**
- * Initialize gallery thumbnail switching
+ * Initialize gallery thumbnail switching and scrolling
  */
 function initGallery() {
-  const thumbs = document.getElementById("gallery-thumbs");
+  const thumbsContainer = document.getElementById("gallery-thumbs");
   const mainImg = document.getElementById("gallery-main-img");
-  if (!thumbs || !mainImg) return;
+  const prevBtn = document.getElementById("gallery-prev");
+  const nextBtn = document.getElementById("gallery-next");
+  
+  if (!thumbsContainer || !mainImg) return;
 
-  thumbs.addEventListener("click", (e) => {
+  // Thumbnail Click
+  thumbsContainer.addEventListener("click", (e) => {
     const thumb = e.target.closest(".product-gallery__thumb");
     if (!thumb) return;
 
@@ -175,11 +187,41 @@ function initGallery() {
     }, 200);
 
     // Update active thumb
-    thumbs
+    thumbsContainer
       .querySelectorAll(".product-gallery__thumb")
       .forEach((t) => t.classList.remove("active"));
     thumb.classList.add("active");
   });
+
+  // Navigation Arrows
+  if (prevBtn && nextBtn) {
+    const scrollAmount = 84; // 72px width + 12px gap (0.75rem)
+
+    const updateArrowState = () => {
+      prevBtn.disabled = thumbsContainer.scrollLeft <= 0;
+      nextBtn.disabled = 
+        Math.abs(thumbsContainer.scrollLeft + thumbsContainer.clientWidth - thumbsContainer.scrollWidth) < 1;
+    };
+
+    // Initial check
+    // Wait for images to load slightly or layout to settle
+    setTimeout(updateArrowState, 100);
+    thumbsContainer.addEventListener('scroll', debounce(updateArrowState, 50));
+
+    prevBtn.addEventListener("click", () => {
+      thumbsContainer.scrollBy({ left: -scrollAmount * 4, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      thumbsContainer.scrollBy({ left: scrollAmount * 4, behavior: "smooth" });
+    });
+    
+    // Check if we even need arrows (if content fits)
+    if (thumbsContainer.scrollWidth <= thumbsContainer.clientWidth) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+    }
+  }
 }
 
 /**
