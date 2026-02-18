@@ -33,10 +33,12 @@
     "id": 2,
     "slug": "leather-apron",
     "name": "Leather Apron",
+    "subName": "(Full-Grain Crazy Horse Leather)",
     "category": "Aprons",
-    "priceLabel": "Price on request",
+    "priceLabel": "EUR 170. Wholesale Price on request",
     "imageFit": "contain",
-    "description": "Designed for craftspeople and culinary artists, this heavy-duty leather apron features adjustable cross-back straps and riveted tool pockets.",
+    "description": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots",
+    "productInfo": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots.<br><br><strong>Features:</strong><br>-&nbsp;Rugged & Reliable<br>-&nbsp;Adjustable Straps<br>-&nbsp;Heat & Stain Resistant<br>-&nbsp;One Main Pocket for Tools<br>-&nbsp;Dedicated slot for pens and small tools<br>-&nbsp;Premium Full-Grain Leather<br>-&nbsp;Reinforced stitching for durability<br>-&nbsp;Scratch-resistant, water-repellent, and ages beautifully<br>-&nbsp;Size: One-size-fits-all adjustable design<br>-&nbsp;Colors: Brown, Light Brown, Dark Brown",
     "images": [
       "ASSESTS/Aprons/1.png",
       "ASSESTS/Aprons/2.png",
@@ -51,7 +53,7 @@
       "ASSESTS/Aprons/11.png",
       "ASSESTS/Aprons/12.png"
     ],
-    "material": "Oiled Pull-Up Leather",
+    "material": "Crafted with 100% Full-grain leather (Crazy horse leather)",
     "sku": "GM-AP-001",
     "featured": true,
     "availability": "Available",
