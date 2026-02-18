@@ -39,39 +39,43 @@ module.exports = async (req, res) => {
 
   // --- Build email content ---
   const htmlBody = `
-    <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; background: #faf9f6; border: 1px solid #e8e4dd; border-radius: 8px; overflow: hidden;">
-      <div style="background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%); padding: 30px; text-align: center;">
-        <h1 style="color: #c9a24f; margin: 0; font-size: 24px; letter-spacing: 2px;">GOLDEN MOTIF</h1>
-        <p style="color: #a09880; margin: 8px 0 0; font-size: 13px; letter-spacing: 1px;">New Contact Inquiry</p>
+    <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+      <div style="background: #0d0d0d; padding: 40px 20px; text-align: center;">
+        <img src="https://goldenmotif.vercel.app/ASSESTS/Logo-GoldenMotif.png" alt="Golden Motif" style="width: 80px; height: auto; margin-bottom: 20px;">
+        <h1 style="color: #c9a24f; margin: 0; font-size: 26px; font-weight: 300; letter-spacing: 4px; text-transform: uppercase;">GOLDEN MOTIF</h1>
+        <div style="width: 40px; height: 1px; background: #c9a24f; margin: 15px auto;"></div>
+        <p style="color: #999; margin: 5px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 2px;">Inquiry Received</p>
       </div>
-      <div style="padding: 30px;">
+      <div style="padding: 40px 30px;">
+        <h2 style="font-size: 18px; color: #1a1a1a; margin-top: 0; margin-bottom: 25px; font-weight: 400; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">Contact Information</h2>
         <table style="width: 100%; border-collapse: collapse;">
           <tr>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #8a7d6b; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; width: 140px; vertical-align: top;">Name</td>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #2c2c2c; font-size: 15px;">${escapeHtml(name)}</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; width: 120px; vertical-align: top;">Name</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #333; font-size: 14px; font-weight: 500;">${escapeHtml(name)}</td>
           </tr>
           <tr>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #8a7d6b; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Email</td>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #2c2c2c; font-size: 15px;"><a href="mailto:${escapeHtml(email)}" style="color: #c9a24f;">${escapeHtml(email)}</a></td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Email</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #333; font-size: 14px;"><a href="mailto:${escapeHtml(email)}" style="color: #c9a24f; text-decoration: none; border-bottom: 1px solid rgba(201, 162, 79, 0.2);">${escapeHtml(email)}</a></td>
           </tr>
           ${company ? `
           <tr>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #8a7d6b; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Company</td>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #2c2c2c; font-size: 15px;">${escapeHtml(company)}</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Company</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #333; font-size: 14px;">${escapeHtml(company)}</td>
           </tr>` : ''}
           ${interest ? `
           <tr>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #8a7d6b; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Interest</td>
-            <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dd; color: #2c2c2c; font-size: 15px;">${escapeHtml(interest)}</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Interest</td>
+            <td style="padding: 15px 0; border-bottom: 1px solid #f9f9f9; color: #333; font-size: 14px;">${escapeHtml(interest)}</td>
           </tr>` : ''}
           <tr>
-            <td style="padding: 12px 0; color: #8a7d6b; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Message</td>
-            <td style="padding: 12px 0; color: #2c2c2c; font-size: 15px; line-height: 1.6;">${escapeHtml(message).replace(/\n/g, '<br>')}</td>
+            <td style="padding: 20px 0; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">Message</td>
+            <td style="padding: 20px 0; color: #444; font-size: 14px; line-height: 1.7; font-style: italic;">"${escapeHtml(message).replace(/\n/g, '<br>')}"</td>
           </tr>
         </table>
       </div>
-      <div style="background: #f0ede6; padding: 16px 30px; text-align: center; font-size: 12px; color: #8a7d6b;">
-        This message was sent from the Golden Motif website contact form.
+      <div style="background: #fafafa; padding: 25px 30px; text-align: center; border-top: 1px solid #f0f0f0;">
+        <p style="margin: 0; font-size: 11px; color: #aaa; letter-spacing: 1px;">&copy; ${new Date().getFullYear()} GOLDEN MOTIF &bull; MILAN, ITALY</p>
+        <p style="margin: 8px 0 0; font-size: 10px; color: #bbb;">This is an automated notification from your website contact form.</p>
       </div>
     </div>
   `;
