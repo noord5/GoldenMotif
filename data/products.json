@@ -125,10 +125,14 @@
     "id": 5,
     "slug": "wallet-clutch-for-ladies",
     "name": "Wallet Clutch for Ladies",
+    "subName": "(Adjustable Handle Strap)",
     "category": "Clutches",
-    "priceLabel": "Price on request",
+    "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "An elegant wallet clutch designed for the modern woman. Features a spacious interior with card slots, a zip compartment, and a detachable wrist strap for versatile styling.",
+    "description": "Elegant women’s leather clutch wallet crafted from pure cow leather. Features magnetic and zipper closure, card slots, cash compartments, and ID window—perfect for evenings, events, and everyday luxury carry.<br><br>-&nbsp;Premium pure cow leather construction<br>-&nbsp;Stylish adjustable handle strap for versatile carry<br>-&nbsp;Perfect for evenings, events, and everyday luxury carry.",
+    "productInfo": "Elegant women’s handmade leather clutch wallet crafted from pure cow leather. Features magnetic and zipper closure, card slots, cash compartments, and ID window—perfect for evenings, events, and everyday luxury carry.<br><br><strong>Features:</strong><br>-&nbsp;Premium pure cow leather construction<br>-&nbsp;Hand-crafted for style and luxury.<br>-&nbsp;Stylish adjustable handle strap for versatile carry<br>-&nbsp;Perfect for evenings, events, and everyday luxury carry.<br>-&nbsp;Color: Dark Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Wallet Clutch for Ladies/1.png",
       "ASSESTS/Wallet Clutch for Ladies/2.png",
@@ -143,7 +147,7 @@
     "sku": "GM-CL-002",
     "featured": false,
     "availability": "Available",
-    "tags": ["clutch", "wallet", "ladies", "women"],
+    "tags": ["leather", "handmade", "premium", "ladies", "clutch", "wallet", "ladies"],
     "createdAt": "2025-10-01T00:00:00Z"
   },
   {
