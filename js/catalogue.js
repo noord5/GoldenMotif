@@ -12,7 +12,7 @@ async function initCatalogue() {
   const grid = document.getElementById('catalogue-grid');
   if (!grid) return;
 
-  const ITEMS_PER_PAGE = 8;
+  const ITEMS_PER_PAGE = Infinity;
   let currentPage = 1;
   let filteredProducts = [];
   let currentCategory = 'All';

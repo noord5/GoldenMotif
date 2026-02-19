@@ -527,6 +527,25 @@
   line-height: 1.8;
 }
 
+.accordion__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.accordion__gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.accordion__gallery img:hover {
+  transform: scale(1.03);
+}
+
 /* ═══════════════════════════════════════
    FORM INPUTS
    ═══════════════════════════════════════ */

@@ -46,9 +46,8 @@ async function initProductDetail() {
 function renderProduct(container, product) {
   const mainImage =
     product.images && product.images[0] ? product.images[0] : "";
-  
-  
-  const fitClass = product.imageFit === 'contain' ? 'object-contain' : '';
+
+  const fitClass = product.imageFit === "contain" ? "object-contain" : "";
 
   container.innerHTML = `
     <div class="container">
@@ -95,7 +94,7 @@ function renderProduct(container, product) {
           <span class="product-info__category">${product.category}</span>
           <h1 class="product-info__name">
             ${product.name}
-            ${product.subName ? `<span class="product-info__subtitle">${product.subName}</span>` : ''}
+            ${product.subName ? `<span class="product-info__subtitle">${product.subName}</span>` : ""}
           </h1>
           <span class="product-info__price">${product.priceLabel}</span>
           <p class="product-info__desc">${product.description}</p>
@@ -130,10 +129,13 @@ function renderProduct(container, product) {
               </button>
               <div class="accordion__content">
                 <div class="accordion__content-inner">
-                  ${product.productInfo || `
+                  ${
+                    product.productInfo ||
+                    `
                     <p>${product.description}</p>
                     <p style="margin-top: 0.75rem;">Each piece is individually inspected for quality and ships with a certificate of authenticity. Our artisans take pride in every stitch, ensuring that your Golden Motif product will age gracefully and become a trusted companion for years to come.</p>
-                  `}
+                  `
+                  }
                 </div>
               </div>
             </div>
@@ -162,6 +164,24 @@ function renderProduct(container, product) {
                 </div>
               </div>
             </div>
+
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false">
+                Packaging &amp; Presentation
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <div class="accordion__content-inner">
+                  <p>Every Golden Motif product is carefully wrapped and placed inside a premium-quality dust cover crafted from soft, breathable fabric. Our dust covers are designed to shield your leather goods from dust, moisture, and scratches — preserving their natural beauty from the moment they leave our atelier to the moment they reach your hands.</p>
+                  <p style="margin-top: 0.75rem;">Whether stored or in transit, your piece remains protected in packaging that reflects the same standard of craftsmanship as the product itself.</p>
+                  <div class="accordion__gallery">
+                    <img src="ASSESTS/How do w epack your itrms_6/1.png" alt="Premium dust cover packaging" loading="lazy">
+                    <img src="ASSESTS/How do w epack your itrms_6/3.png" alt="Leather product wrapped in dust cover" loading="lazy">
+                    <img src="ASSESTS/How do w epack your itrms_6/6.png" alt="Golden Motif packaging presentation" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,10 +197,12 @@ function initGallery() {
   const mainImg = document.getElementById("gallery-main-img");
   const mainPrev = document.getElementById("main-prev");
   const mainNext = document.getElementById("main-next");
-  
+
   if (!thumbsContainer || !mainImg) return;
 
-  const thumbs = Array.from(thumbsContainer.querySelectorAll(".product-gallery__thumb"));
+  const thumbs = Array.from(
+    thumbsContainer.querySelectorAll(".product-gallery__thumb"),
+  );
   let currentIndex = 0;
 
   const updateGallery = (index) => {
@@ -189,7 +211,7 @@ function initGallery() {
     if (!thumb) return;
 
     const imgSrc = thumb.dataset.img;
-    
+
     // Update main image with fade
     mainImg.style.opacity = "0";
     setTimeout(() => {
@@ -200,9 +222,13 @@ function initGallery() {
     // Update active thumb
     thumbs.forEach((t) => t.classList.remove("active"));
     thumb.classList.add("active");
-    
+
     // Smooth scroll thumbnail into view if needed
-    thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    thumb.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
   };
 
   // Thumbnail Click
