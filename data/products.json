@@ -304,21 +304,25 @@
       "ASSESTS/Men's Leather Wallet - Brown/2.png",
       "ASSESTS/Men's Leather Wallet - Brown/3.png"
     ],
-    "material": "Nappa Leather",
+    "material": "100% Genuine Natural Leather",
     "sku": "GM-WL-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men"],
+    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men", "brown"],
     "createdAt": "2026-01-05T00:00:00Z"
   },
   {
     "id": 12,
     "slug": "mens-leather-wallet-black",
     "name": "Men's Leather Wallet - Black",
+    "subName": "(Executive Bi-fold)",
     "category": "Wallets",
-    "priceLabel": "Price on request",
+    "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A sleek black leather wallet crafted from premium full-grain leather with a refined finish. Features multiple card slots, a bill compartment, and RFID-blocking technology for everyday sophistication.",
+    "description": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day.<br><br>-&nbsp;100% Handcrafted.<br>-& 100% Full-grain Leather.<br>-&nbsp;Edges are hand-burnished<br>-&nbsp;One open pocket for cash<br>-&nbsp;Six credit card slots",
+    "productInfo": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day. <br><br><strong>Features:</strong><br>-&nbsp;100% Handcrafted.<br>-& 100% Full-grain Leather.<br>-&nbsp;100%Hand Stitched<br>-&nbsp;Edges are hand-burnished<br>-&nbsp;One open pocket for cash<br>-&nbsp;Six credit card slots<br>-&nbsp;Dimensions: 12 x 9 x 3 cm<br>-&nbsp;Color: Black",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Men's Leather Wallet - Black/1.png",
       "ASSESTS/Men's Leather Wallet - Black/2.png",
@@ -329,7 +333,7 @@
     "sku": "GM-WL-002",
     "featured": false,
     "availability": "Available",
-    "tags": ["wallet", "black", "leather", "men"],
+    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men","black"],
     "createdAt": "2026-02-17T00:00:00Z"
   },
   {
