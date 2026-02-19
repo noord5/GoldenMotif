@@ -547,8 +547,8 @@
 .product-info__price {
   font-family: var(--ff-heading);
   font-size: var(--fs-h4);
-  font-weight: var(--fw-medium);
-  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-dark);
   margin-bottom: 0;
   font-variant-numeric: lining-nums;
   -moz-font-feature-settings: "lnum";
@@ -560,7 +560,7 @@
   font-size: var(--fs-body);
   line-height: 1.8;
   max-width: 60ch;
-  color: #4a4a44;
+  color: var(--clr-text);
 }
 
 .product-info__meta {
@@ -585,7 +585,7 @@
 }
 
 .product-info__meta-value {
-  color: var(--clr-text-light);
+  color: var(--clr-text);
 }
 
 .product-info__availability {

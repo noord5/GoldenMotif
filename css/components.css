@@ -440,10 +440,10 @@
 }
 
 .product-card__price {
-  font-size: var(--fs-small);
-  color: var(--clr-text-muted);
-  font-style: italic;
-  font-family: var(--ff-accent);
+  font-size: var(--fs-xs);
+  color: var(--clr-accent-dark);
+  font-weight: var(--fw-medium);
+  font-family: var(--ff-body);
 }
 
 /* ═══════════════════════════════════════
