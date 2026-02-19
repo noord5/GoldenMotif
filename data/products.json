@@ -215,8 +215,8 @@
     "category": "Travel Bags",
     "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Durable YKK zipper closures<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Soft 100% cotton interior lining<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials.",
-    "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
+    "description": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, hanging loop, side handle and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Durable YKK zipper closures<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Soft 100% cotton interior lining<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials.",
+    "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Built-in hanging loop for convenient bathroom use<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
     
     "images": [
@@ -242,8 +242,8 @@
     "category": "Travel Bags",
     "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A compact and lightweight version of our signature toiletry case, perfect for weekend getaways. Lined with water-resistant fabric and secured with a YKK brass zipper.",
-    "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
+    "description": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials",
+    "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
     
     "images": [
@@ -263,12 +263,16 @@
   },
   {
     "id": 10,
-    "slug": "heritage-leather-jacket",
+    "slug": "mens-leather-jacket",
     "name": "Men's Leather Jacket",
+    "subName": "(Detatchable Fur Collar)",
     "category": "Jackets",
-    "priceLabel": "Price on request",
+    "priceLabel": "EUR 300. Wholesale Price on request",
     "imageFit": "contain",
     "description": "A timeless moto-inspired jacket crafted from supple lambskin leather with satin lining. Features antique copper hardware and an adjustable hem for a perfect fit.",
+    "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Men's Leather Jacket/1.png",
       "ASSESTS/Men's Leather Jacket/2.png",
@@ -280,17 +284,21 @@
     "sku": "GM-JK-001",
     "featured": false,
     "availability": "Made to order",
-    "tags": ["jacket", "moto", "heritage", "unisex"],
+    "tags": ["leather", "handmade", "premium", "jacket", "moto", "men"],
     "createdAt": "2025-08-01T00:00:00Z"
   },
   {
     "id": 11,
-    "slug": "executive-bifold-wallet",
+    "slug": "mens-leather-wallet-brown",
     "name": "Men's Leather Wallet - Brown",
+    "subName": "(Executive Bi-fold)",
     "category": "Wallets",
-    "priceLabel": "Price on request",
+    "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "Slim bifold wallet with RFID-blocking lining, six card slots, and a full-length bill compartment. Precision-cut from a single hide for seamless quality.",
+    "description": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day.The uniqueness of the product is highlighted by the use of hand-stitched leather with an interesting rough texture. <br><br>-&nbsp;Handmade with 100% Natural Leather.<br>-&nbsp;Two generous note compartments<br>-&nbsp;Six credit card slots<br>-&nbsp;Mesh pocket for documents<br>-&nbsp;Coin pocket with zip",
+    "productInfo": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day. The uniqueness of the product is highlighted by the use of hand-stitched leather with an interesting rough texture. <br><br><strong>Features:</strong><br>-&nbsp;Handmade with 100% Natural Leather.<br>-&nbsp;Two generous note compartments<br>-&nbsp;Six credit card slots<br>-&nbsp;Mesh pocket for documents<br>-&nbsp;Coin pocket with zip<br>-&nbsp;Small inner compartment.<br>-&nbsp;Dimensions: 12 x 9 x 3 cm<br>-&nbsp;Color: Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Men's Leather Wallet - Brown/1.png",
       "ASSESTS/Men's Leather Wallet - Brown/2.png",
@@ -300,7 +308,7 @@
     "sku": "GM-WL-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["wallet", "bifold", "executive", "men"],
+    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men"],
     "createdAt": "2026-01-05T00:00:00Z"
   },
   {
