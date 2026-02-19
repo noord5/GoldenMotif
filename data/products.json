@@ -93,12 +93,16 @@
   },
   {
     "id": 4,
-    "slug": "classic-leather-handbag",
+    "slug": "ladies-leather-handbag",
     "name": "Leather Convertible Shoulder Bag & Backpack",
+    "subName": "",
     "category": "Handbags",
-    "priceLabel": "Price on request",
+    "priceLabel": "EUR 160. Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A timeless leather handbag crafted from full-grain cowhide, featuring hand-stitched seams and polished brass hardware. The spacious interior accommodates daily essentials with elegance.",
+    "description": "Premium genuine leather shoulder bag handcrafted in Pakistan for modern women who value luxury and timeless style. This bag can be used as a backpack as well. Features a secure zip closure, spacious main compartment, inner pocket, and outer front zipper pocket—perfect for work, travel, and everyday elegance.<br><br>-&nbsp;100% Genuine Leather, handcrafted by skilled artisans<br>-&nbsp;Convertibe to Backpack<br>-&nbsp;Secure zip closure with spacious main compartment<br>-&nbsp;Inner zipper pocket for organized storage<br>-&nbsp;Outer front zipper pocket for quick access essentials<br>-&nbsp;Elegant, minimal design for work and daily wear.",
+    "productInfo": "Premium genuine leather shoulder bag handcrafted in Pakistan for modern women who value luxury and timeless style. This bag can be used as a backpack as well. Features a secure zip closure, spacious main compartment, inner pocket, and outer front zipper pocket—perfect for work, travel, and everyday elegance.<br><br><strong>Features:</strong><br>-&nbsp;100% Genuine Leather, handcrafted by skilled artisans<br>-&nbsp;Convertibe to Backpack<br>-&nbsp;Secure zip closure with spacious main compartment<br>-&nbsp;Inner zipper pocket for organized storage<br>-&nbsp;Outer front zipper pocket for quick access essentials<br>-&nbsp;Elegant, minimal design for work and daily wear.<br>-&nbsp;Durable YKK zippers throughout<br>-&nbsp;Interior lined with 100% cotton fabric<br>-&nbsp;Approximate dimensions: 35cm (W) X 30cm (H) X 10cm (D)<br>-&nbsp;Color: Brown<br>-&nbsp;Weight: 0.5 kg",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Leather Convertible Shoulder Bag & Backpack/1.png",
       "ASSESTS/Leather Convertible Shoulder Bag & Backpack/2.png",
