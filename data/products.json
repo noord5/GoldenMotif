@@ -152,12 +152,16 @@
   },
   {
     "id": 6,
-    "slug": "evening-clutch",
+    "slug": "ladies-evening-bag",
     "name": "Ladies Evening Bag",
+    "subName": "(Classic Design - Olive Green)",
     "category": "Clutches",
-    "priceLabel": "Price on request",
+    "priceLabel": "EUR 105. Wholesale Price on request",
     "imageFit": "contain",
-    "description": "An exquisite clutch for evening occasions, featuring hand-embossed detailing and a satin-lined interior. Includes a slim chain strap for hands-free elegance.",
+    "description": "Olive green leather shoulder bag crafted from premium vegetable-tanned cow leather. Lightweight and compact with a secure zip closure and inner pocket—perfect for daily essentials, brunch dates, and elegant evening outings.<br><br>-&nbsp;Premium vegetable-tanned cow leather<br>-&nbsp;Lightweight design (approx. 350g)<br>-&nbsp;Secure main zipped compartment<br>-&nbsp;Internal zipper pocket for essentials<br>-&nbsp;Fixed shoulder strap with 53 cm drop",
+    "productInfo": "Olive green leather shoulder bag crafted from premium vegetable-tanned cow leather. Lightweight and compact with a secure zip closure and inner pocket—perfect for daily essentials, brunch dates, and elegant evening outings.<br><br><strong>Features:</strong><br>-&nbsp;Premium vegetable-tanned cow leather<br>-&nbsp;Lightweight design<br>-&nbsp;Secure main zipped compartment<br>-&nbsp;Internal zipper pocket for essentials<br>-&nbsp;Fixed shoulder strap with 53 cm drop<br>-&nbsp;Origin: Made in Pakistan<br>-&nbsp;Color: Olive Green<br>-&nbsp;Weight: 350g (approx)",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Ladies Evening Bag/1.png",
       "ASSESTS/Ladies Evening Bag/2.png",
@@ -166,21 +170,25 @@
       "ASSESTS/Ladies Evening Bag/5.png",
       "ASSESTS/Ladies Evening Bag/6.png"
     ],
-    "material": "Embossed Calfskin",
+    "material": "Premium vegetable-tanned Cow leather",
     "sku": "GM-CL-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["clutch", "evening", "women", "embossed"],
+    "tags": ["leather", "handmade", "premium", "ladies", "evening", "women", "shoulderbag"],
     "createdAt": "2026-01-12T00:00:00Z"
   },
   {
     "id": 7,
     "slug": "urban-crossbody-bag",
     "name": "Crossbody Bag (Unisex)",
+    "subName": "(Messenger Bag / Sling Bag)",
     "category": "Crossbody",
-    "priceLabel": "Price on request",
+    "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A compact crossbody designed for the modern urbanite. Adjustable strap, secure magnetic closure, and multiple interior pockets keep everything organized.",
+    "description": "Vintage A6 shoulder & crossbody bag crafted from premium Crazy Horse leather. Designed for e-reader, wallet, phone, and keys, it offers secure storage, water resistance, and all-day comfort. Develops a rich patina over time—perfect for travel, walks, and daily use.<br><br>-&nbsp;Premium Crazy Horse full-grain leather<br>-&nbsp;Compact A6 size for phone, wallet & e-reader<br>-&nbsp;Water-resistant with secure compartments<br>-&nbsp;Wide leather strap for comfortable carry<br>-&nbsp;Ideal for travel, city walks & everyday wear",
+    "productInfo": "Looking for a stylish yet practical solution for your everyday essentials? The practical vintage-look sling bag is just what you need. This sporty-elegant shoulder bag, crafted from high-quality Crazy Horse leather, combines classic elegance with modern functionality. Specifically designed for your e-reader, wallet, smartphone, and keys, it offers optimal storage space and protects your belongings in any weather thanks to its waterproof construction.<br><br>Over time, the bag develops a sophisticated patina that further emphasizes its vintage character and makes it increasingly valuable with age. Thanks to the handcrafted workmanship and sustainable genuine leather, you receive a durable product that perfectly complements your everyday life.<br><br>The well-designed interior layout ensures that you can always keep your belongings organized – making it the ideal messenger bag for walks, hikes, or sightseeing. Thanks to the wide shoulder straps made of the finest full-grain cowhide leather, you'll enjoy optimal carrying comfort and maximum freedom of movement.<strong>Features:</strong><br>-&nbsp;Premium Crazy Horse full-grain leather<br>-&nbsp;Compact A6 size for phone, wallet & e-reader<br>-&nbsp;Water-resistant with secure compartments<br>-&nbsp;Wide leather strap for comfortable carry<br>-&nbsp;Ideal for travel, city walks & everyday wear<br>-&nbsp;Clever, adjustable closure with roll buckle and snap closure<br>-&nbsp;2 pen holders; inside<br>-&nbsp;2 slip pockets (each 13 x 18 cm)<br>-&nbsp;1 zippered pocket (12 x 10 cm) on the front<br>-&nbsp;1 secret slip pocket (13 x 18 cm) on the front<br>-&nbsp;Continuously adjustable, wide shoulder strap made of saddle leather on the back<br>-&nbsp;Lining: Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Opti Germany, YKK Japan<br>-&nbsp;Reinforced stress points with extra stitching and solid rivets<br>-&nbsp;Elegant metal fittings: double-headed rivets Solid roller buckles, eyelets<br>-&nbsp;Color: Saddle Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Crossbody Bag (Unisex)/1.png",
       "ASSESTS/Crossbody Bag (Unisex)/2.png",
@@ -192,11 +200,11 @@
       "ASSESTS/Crossbody Bag (Unisex)/8.png",
       "ASSESTS/Crossbody Bag (Unisex)/9.png"
     ],
-    "material": "Pebbled Calfskin Leather",
+    "material": "100% Full-Grain Buffalo Leather (Crazy Horse)",
     "sku": "GM-CB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["crossbody", "urban", "compact", "unisex"],
+    "tags": ["leather", "handmade", "premium", "crossbody", "sling bag", "messenger bag", "urban", "compact", "unisex"],
     "createdAt": "2025-10-20T00:00:00Z"
   },
   {
