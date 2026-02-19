@@ -340,10 +340,14 @@
     "id": 13,
     "slug": "mens-leather-belt",
     "name": "Men's Leather Belt",
+    "subName": "(Adjustable Length)",
     "category": "Belts",
-    "priceLabel": "Price on request",
+    "priceLabel": "Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.",
+    "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.<br><br>-&nbsp;100% Genuine Leather<br>-&nbsp;100% Handmade by talented craftsmen<br>-&nbsp;Adjustable Length<br>-&nbsp;Dimensions: 4mm (Thickness) X 38mm(Width) X Adjustable(Length)",
+    "productInfo": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.<br><br><strong>Features:</strong><br>-&nbsp;100% Genuine Leather<br>-&nbsp;100% Handmade by talented craftsmen<br>-&nbsp;Adjustable Length<br>-&nbsp;Dimensions: 4mm (Thickness) X 38mm(Width) X Adjustable(Length)<br>-&nbsp;Color: Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Men's Leather Belt/1.png",
       "ASSESTS/Men's Leather Belt/2.png",
