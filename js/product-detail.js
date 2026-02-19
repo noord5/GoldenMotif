@@ -164,24 +164,6 @@ function renderProduct(container, product) {
                 </div>
               </div>
             </div>
-
-            <div class="accordion__item">
-              <button class="accordion__trigger" aria-expanded="false">
-                Packaging &amp; Presentation
-                <span class="accordion__icon"></span>
-              </button>
-              <div class="accordion__content">
-                <div class="accordion__content-inner">
-                  <p>Every Golden Motif product is carefully wrapped and placed inside a premium-quality dust cover crafted from soft, breathable fabric. Our dust covers are designed to shield your leather goods from dust, moisture, and scratches — preserving their natural beauty from the moment they leave our atelier to the moment they reach your hands.</p>
-                  <p style="margin-top: 0.75rem;">Whether stored or in transit, your piece remains protected in packaging that reflects the same standard of craftsmanship as the product itself.</p>
-                  <div class="accordion__gallery">
-                    <img src="ASSESTS/How do w epack your itrms_6/1.png" alt="Premium dust cover packaging" loading="lazy">
-                    <img src="ASSESTS/How do w epack your itrms_6/3.png" alt="Leather product wrapped in dust cover" loading="lazy">
-                    <img src="ASSESTS/How do w epack your itrms_6/6.png" alt="Golden Motif packaging presentation" loading="lazy">
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
