@@ -8,8 +8,7 @@
     "priceLabel": "EUR 350. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Crafted from premium top-grain crazy horse leather, this handmade duffle bag embodies rugged elegance and timeless durability. It features a dedicated suit carrier, a detachable & adjustable leather strap for versatile carrying and a spacious interior for effortless travel organization.",
-    "productInfo": "Crafted from premium vegetable-tanned full-grain leather, this bag ages gracefully, developing a rich and distinctive patina over time. Ideal for 3–5 day business or leisure trips, it offers generous space and refined durability. A built-in trolley sleeve allows easy attachment to your luggage, ensuring effortless and seamless travel.<br><br><strong>Features:</strong><ul><li>-&nbsp;Hand Crafted from premium top-grain leather</li><li>-&nbsp;Fitted with high-quality solid brass hardware</li><li>-&nbsp;Detachable and adjustable leather shoulder strap for versatile carrying</li><li>-&nbsp;Spacious main compartment with secure zip closure for clothing</li><li>-&nbsp;Four interior zippered pockets for organized storage of accessories</li><li>-&nbsp;Integrated suit carrier to conveniently hold up to two suits</li><li>-&nbsp;Exterior front open pocket for quick-access essentials</li><li>-&nbsp;Rear exterior zippered pocket for added security</li><li>-&nbsp;Durable YKK zippers throughout</li><li>-&nbsp;Interior lined with 100% cotton fabric</li><li>-&nbsp;Approximate dimensions: 23&quot; (L) x 11&quot; (H) x 11&quot; (W)</li></ul><li>-&nbsp;Color: Saddle Brown</li></ul>",
-    "materialInfo": "<p><strong>Material:</strong> Full-Grain Buffalo Leather</p>",
+    "productInfo": "Crafted from premium vegetable-tanned full-grain leather, this bag ages gracefully, developing a rich and distinctive patina over time. Ideal for 3–5 day business or leisure trips, it offers generous space and refined durability. A built-in trolley sleeve allows easy attachment to your luggage, ensuring effortless and seamless travel.<br><br><strong>Features:</strong><br>-&nbsp;Hand Crafted from premium top-grain leather<br>-&nbsp;Fitted with high-quality solid brass hardware<br>-&nbsp;Detachable and adjustable leather shoulder strap for versatile carrying<br>-&nbsp;Spacious main compartment with secure zip closure for clothing<br>-&nbsp;Four interior zippered pockets for organized storage of accessories<br>-&nbsp;Integrated suit carrier to conveniently hold up to two suits<br>-&nbsp;Exterior front open pocket for quick-access essentials<br>-&nbsp;Rear exterior zippered pocket for added security<br>-&nbsp;Durable YKK zippers throughout<br>-&nbsp;Interior lined with 100% cotton fabric<br>-&nbsp;Approximate dimensions: 23&quot; (L) x 11&quot; (H) x 11&quot; (W)<br>-&nbsp;Color: Saddle Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
     "images": [
       "ASSESTS/Traveler Leather Duffle/1.png",
@@ -26,7 +25,7 @@
     "sku": "GM-DF-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["duffle", "travel", "premium", "unisex"],
+    "tags": ["leather", "handmade", "premium", "unisex", "duffle", "travel"],
     "createdAt": "2025-09-10T00:00:00Z"
   },
   {
@@ -39,6 +38,7 @@
     "imageFit": "contain",
     "description": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots",
     "productInfo": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots.<br><br><strong>Features:</strong><br>-&nbsp;Rugged & Reliable<br>-&nbsp;Adjustable Straps<br>-&nbsp;Heat & Stain Resistant<br>-&nbsp;One Main Pocket for Tools<br>-&nbsp;Dedicated slot for pens and small tools<br>-&nbsp;Premium Full-Grain Leather<br>-&nbsp;Reinforced stitching for durability<br>-&nbsp;Scratch-resistant, water-repellent, and ages beautifully<br>-&nbsp;Size: One-size-fits-all adjustable design<br>-&nbsp;Colors: Brown, Light Brown, Dark Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
     "images": [
       "ASSESTS/Aprons/1.png",
       "ASSESTS/Aprons/2.png",
@@ -57,17 +57,21 @@
     "sku": "GM-AP-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["apron", "leather", "artisan", "unisex"],
+    "tags": ["leather", "handmade", "premium", "unisex", "apron", "leather", "artisan", "barista", "chef", "butcher"],
     "createdAt": "2026-01-20T00:00:00Z"
   },
   {
     "id": 3,
-    "slug": "heritage-travel-bag",
+    "slug": "leather-travel-bagpack",
     "name": "Leather Backpack (Unisex)",
+    "subName": "(Full-Grain Crazy Horse Leather)",
     "category": "Travel Bags",
-    "priceLabel": "Price on request",
+    "priceLabel": "EUR 285. Wholesale Price on request",
     "imageFit": "contain",
-    "description": "A substantial travel companion in rich, full-grain leather. Features multiple external pockets, an internal laptop sleeve, and hand-burnished edges.",
+    "description": "Premium Crazy Horse full-grain leather backpack with hand-stitched rugged texture. Features dual zip compartments, padded laptop section, front buckle pocket, zipper pocket, and side bottle holders—compact yet spacious for work, travel, and everyday carry.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br><br>-&nbsp;Two side pocket for water bottle cary.<br><br>-&nbsp;Perfect for Work, School/College, Travel and Everyday Carry.",
+    "productInfo": "Hand Crafted, Premium Crazy Horse full-grain leather backpack with hand-stitched rugged texture. Features dual zip compartments, padded laptop section, front buckle pocket, zipper pocket, and side bottle holders—compact yet spacious for work, travel, and everyday carry.<br><br><strong>Features:</strong><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Hand-Stitched Leather with an interesting rough texture.<br>-&nbsp;Two main compartment with zipper closing.<br>-&nbsp;One main compartment for your luggage.<br>-&nbsp;Front main compartment to carry Laptop.<br>-&nbsp;Fornt small zipper pocket for mobile and small accessories.<br>-&nbsp;Two side pocket for water bottle cary.<br>-&nbsp;Durable YKK zippers throughout.<br>-&nbsp;Approximate dimensions: 17 x 12 x 5 inches<br>-&nbsp;Color: Saddle Brown",
+    "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
+    
     "images": [
       "ASSESTS/Leather Bagpack (Unisex)/1.png",
       "ASSESTS/Leather Bagpack (Unisex)/2.png",
@@ -84,7 +88,7 @@
     "sku": "GM-TB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["travel", "heritage", "laptop", "unisex"],
+    "tags": ["leather", "handmade", "premium", "unisex", "travel", "backpack", "laptop", "bag"],
     "createdAt": "2025-11-28T00:00:00Z"
   },
   {
@@ -110,7 +114,7 @@
     "sku": "GM-HB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["handbag", "classic", "leather", "women"],
+    "tags": ["leather", "handmade", "premium", "ladies", "handbag", "classic", "shoulderbag", "women", "backpack"],
     "createdAt": "2025-11-15T00:00:00Z"
   },
   {
