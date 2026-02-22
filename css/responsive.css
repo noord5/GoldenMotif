@@ -11,7 +11,6 @@
   .hero {
     min-height: 80vh;
     padding-top: calc(80px + var(--space-2xl));
-    background-position: center;
   }
 
   .hero__content {
@@ -104,7 +103,6 @@
   /* Hero */
   .hero {
     min-height: 70vh;
-    background-position: center bottom;
   }
 
   .hero__content {
