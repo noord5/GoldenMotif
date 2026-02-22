@@ -39,10 +39,10 @@
   background: linear-gradient(
     to right,
     #faf8f5 0%,
-    #faf8f5 25%,
-    rgba(250, 248, 245, 0.92) 37%,
-    rgba(250, 248, 245, 0.5) 50%,
-    transparent 60%
+    #faf8f5 21%,
+    rgba(250, 248, 245, 0.92) 33%,
+    rgba(250, 248, 245, 0.5) 46%,
+    transparent 56%
   );
   pointer-events: none;
 }
@@ -86,7 +86,7 @@
 .hero__desc {
   font-size: var(--fs-body);
   color: #5a5750;
-  max-width: 48ch;
+  max-width: 38ch;
   line-height: 1.75;
 }
 
