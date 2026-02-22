@@ -39,10 +39,10 @@
   background: linear-gradient(
     to right,
     #faf8f5 0%,
-    #faf8f5 16%,
-    rgba(250, 248, 245, 0.85) 32%,
-    rgba(250, 248, 245, 0.2) 48%,
-    transparent 50%
+    #faf8f5 25%,
+    rgba(250, 248, 245, 0.92) 37%,
+    rgba(250, 248, 245, 0.5) 50%,
+    transparent 60%
   );
   pointer-events: none;
 }
