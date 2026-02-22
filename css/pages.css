@@ -9,15 +9,14 @@
    ═══════════════════════════════════════ */
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
-  align-items: flex-end;
-  padding-top: 70px;
-  padding-bottom: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding-top: clamp(100px, 12vw, 160px);
+  padding-bottom: clamp(60px, 8vw, 120px);
   padding-left: clamp(2rem, 6vw, 6rem);
   padding-right: clamp(1rem, 6vw, 5rem);
   background-size: contain;
-  background-position: right bottom;
+  background-position: right center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -31,26 +30,20 @@
   max-width: 500px;
 }
 
-/* Gradient overlay: solid cream on left fading to transparent on right, plus bottom coverage */
+/* Gradient overlay: solid cream on left fading to transparent on right */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: 
-    linear-gradient(
-      to right,
-      #faf8f5 0%,
-      #faf8f5 16%,
-      rgba(250, 248, 245, 0.85) 32%,
-      rgba(250, 248, 245, 0.2) 48%,
-      transparent 50%
-    ),
-    linear-gradient(
-      to top,
-      rgba(250, 248, 245, 0.6) 0%,
-      transparent 40%
-    );
+  background: linear-gradient(
+    to right,
+    #faf8f5 0%,
+    #faf8f5 16%,
+    rgba(250, 248, 245, 0.85) 32%,
+    rgba(250, 248, 245, 0.2) 48%,
+    transparent 50%
+  );
   pointer-events: none;
 }
 

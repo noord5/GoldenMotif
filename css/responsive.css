@@ -9,7 +9,6 @@
 @media (max-width: 1024px) {
   /* Hero */
   .hero {
-    min-height: 80vh;
     padding-top: calc(80px + var(--space-2xl));
   }
 
@@ -101,9 +100,6 @@
   }
 
   /* Hero */
-  .hero {
-    min-height: 70vh;
-  }
 
   .hero__content {
     max-width: 100%;
@@ -204,9 +200,7 @@
    SMALL MOBILE (≤ 480px)
    ═══════════════════════════════════════ */
 @media (max-width: 480px) {
-  .hero {
-    min-height: 60vh;
-  }
+
 
   .collections-grid,
   .grid-products {
