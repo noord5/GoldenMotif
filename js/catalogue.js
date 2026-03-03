@@ -43,6 +43,10 @@ async function initCatalogue() {
   // Initial render
   applyFilters();
 
+  window.addEventListener("currencychange", () => {
+    renderGrid(true);
+  });
+
   // ── Event: Category chips ──
   document.addEventListener('click', (e) => {
     const chip = e.target.closest('.chip[data-category]');
@@ -180,6 +184,11 @@ async function initCatalogue() {
  */
 function createProductCard(product, index = 0) {
   const delay = index % 4;
+  const priceText =
+    window.CurrencyService && typeof CurrencyService.getDisplayPrice === "function"
+      ? CurrencyService.getDisplayPrice(product)
+      : product.priceLabel || "Wholesale Price on request";
+
   const card = createElement('a', {
     className: `product-card reveal reveal-delay-${delay + 1}`,
     href: `product.html?slug=${product.slug}`
@@ -206,7 +215,7 @@ function createProductCard(product, index = 0) {
     <div class="product-card__body">
       <span class="product-card__category">${product.category}</span>
       <h3 class="product-card__name">${product.name}</h3>
-      <span class="product-card__price">${product.priceLabel}</span>
+      <span class="product-card__price">${priceText}</span>
     </div>
   `;
   return card;

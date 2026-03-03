@@ -6,6 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   injectHeader();
+  initCurrencyExperience();
   injectFooter();
   processIconPlaceholders(); // inject SVG icons into data-icon elements
   initMobileMenu();
@@ -58,6 +59,19 @@ function injectHeader() {
         </div>
 
         <div class="navbar__actions">
+          <div class="currency-switcher" aria-label="Currency selector">
+            <label for="currency-select-desktop" class="sr-only">Select currency</label>
+            <select
+              id="currency-select-desktop"
+              class="currency-switcher__select"
+              data-currency-select
+              aria-label="Select currency"
+            >
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="CAD">CAD (C$)</option>
+            </select>
+          </div>
 
           <a href="contact.html" class="btn btn--primary btn--sm">PARTNER WITH US</a>
           <button class="navbar__menu-btn" aria-label="Toggle menu" aria-expanded="false">
@@ -68,6 +82,19 @@ function injectHeader() {
     </nav>
 
     <div class="mobile-nav" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <div class="currency-switcher currency-switcher--mobile" aria-label="Currency selector">
+        <label for="currency-select-mobile" class="sr-only">Select currency</label>
+        <select
+          id="currency-select-mobile"
+          class="currency-switcher__select"
+          data-currency-select
+          aria-label="Select currency"
+        >
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="CAD">CAD (C$)</option>
+        </select>
+      </div>
       <a href="index.html" class="mobile-nav__link">Home</a>
       <a href="catalogue.html" class="mobile-nav__link">Catalogue</a>
       <a href="about.html" class="mobile-nav__link">About</a>
@@ -75,6 +102,13 @@ function injectHeader() {
       <a href="contact.html" class="btn btn--primary mt-lg">PARTNER WITH US</a>
     </div>
   `;
+}
+
+function initCurrencyExperience() {
+  if (!window.CurrencyService || typeof CurrencyService.init !== "function") {
+    return;
+  }
+  CurrencyService.init();
 }
 
 /* ─────────────────────────────────────

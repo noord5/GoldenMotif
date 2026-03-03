@@ -5,7 +5,7 @@
     "name": "Traveler Leather Duffle",
     "subName": "(With Suit Carrier)",
     "category": "Duffles",
-    "priceLabel": "EUR 350. Wholesale Price on request",
+    "priceLabel": "USD 385. EUR 350. CAD 525. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Crafted from premium top-grain crazy horse leather, this handmade duffle bag embodies rugged elegance and timeless durability. It features a dedicated suit carrier, a detachable & djustable leather strap for versatile carrying and a spacious interior for effortless travel organization. <br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Dedicated Suit Carrier<br>-&nbsp;Water-Resistant, Rugged & Reliable.<br>-&nbsp;Perfect for Travel - Work & Leisure Trips.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Crafted from premium vegetable-tanned full-grain leather, this bag ages gracefully, developing a rich and distinctive patina over time. Ideal for 3–5 day business or leisure trips, it offers generous space and refined durability. A built-in trolley sleeve allows easy attachment to your luggage, ensuring effortless and seamless travel.<br><br><strong>Features:</strong><br>-&nbsp;Hand Crafted from premium top-grain leather<br>-&nbsp;Fitted with high-quality solid brass hardware<br>-&nbsp;Detachable and adjustable leather shoulder strap for versatile carrying<br>-&nbsp;Spacious main compartment with secure zip closure for clothing<br>-&nbsp;Four interior zippered pockets for organized storage of accessories<br>-&nbsp;Integrated suit carrier to conveniently hold up to two suits<br>-&nbsp;Exterior front open pocket for quick-access essentials<br>-&nbsp;Rear exterior zippered pocket for added security<br>-&nbsp;Durable YKK zippers throughout<br>-&nbsp;Interior lined with 100% cotton fabric<br>-&nbsp;Approximate dimensions: 23&quot; (L) x 11&quot; (H) x 11&quot; (W)<br>-&nbsp;Color: Saddle Brown",
@@ -25,8 +25,22 @@
     "sku": "GM-DF-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "unisex", "duffle", "travel"],
-    "createdAt": "2025-09-10T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "unisex",
+      "duffle",
+      "travel"
+    ],
+    "createdAt": "2025-09-10T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 385,
+      "EUR": 350,
+      "CAD": 525,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 2,
@@ -34,7 +48,7 @@
     "name": "Leather Apron",
     "subName": "(Full-Grain Crazy Horse Leather)",
     "category": "Aprons",
-    "priceLabel": "EUR 170. Wholesale Price on request",
+    "priceLabel": "USD 185. EUR 170. CAD 250. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Introducing the Leather Apron—carefully handcrafted from Crazy Horse full-grain leather, one of the finest natural leathers available. Designed for chefs, butchers, artisans, baristas, and BBQ enthusiasts, this apron delivers exceptional protection, rugged elegance, and long-lasting durability.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Adjustable One‑Size‑Fits‑All Design.<br>-&nbsp;Built-In Utility: Front Pocket + Tool Slots.<br><br><strong>Features:</strong><br>-&nbsp;Rugged & Reliable<br>-&nbsp;Adjustable Straps<br>-&nbsp;Heat & Stain Resistant<br>-&nbsp;One Main Pocket for Tools<br>-&nbsp;Dedicated slot for pens and small tools<br>-&nbsp;Premium Full-Grain Leather<br>-&nbsp;Reinforced stitching for durability<br>-&nbsp;Scratch-resistant, water-repellent, and ages beautifully<br>-&nbsp;Size: One-size-fits-all adjustable design<br>-&nbsp;Colors: Brown, Light Brown, Dark Brown",
@@ -57,8 +71,26 @@
     "sku": "GM-AP-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "unisex", "apron", "leather", "artisan", "barista", "chef", "butcher"],
-    "createdAt": "2026-01-20T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "unisex",
+      "apron",
+      "leather",
+      "artisan",
+      "barista",
+      "chef",
+      "butcher"
+    ],
+    "createdAt": "2026-01-20T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 185,
+      "EUR": 170,
+      "CAD": 250,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 3,
@@ -66,12 +98,11 @@
     "name": "Leather Backpack (Unisex)",
     "subName": "(Full-Grain Crazy Horse Leather)",
     "category": "Travel Bags",
-    "priceLabel": "EUR 285. Wholesale Price on request",
+    "priceLabel": "USD 315. EUR 285. CAD 430. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Premium Crazy Horse full-grain leather backpack with hand-stitched rugged texture. Features dual zip compartments, padded laptop section, front buckle pocket, zipper pocket, and side bottle holders—compact yet spacious for work, travel, and everyday carry.<br><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Two side pocket for water bottle cary.<br>-&nbsp;Perfect for Work, School/College, Travel and Everyday Carry.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Hand Crafted, Premium Crazy Horse full-grain leather backpack with hand-stitched rugged texture. Features dual zip compartments, padded laptop section, front buckle pocket, zipper pocket, and side bottle holders—compact yet spacious for work, travel, and everyday carry.<br><br><strong>Features:</strong><br>-&nbsp;Premium Full‑Grain “Crazy Horse” Leather.<br>-&nbsp;Hand-Stitched Leather with an interesting rough texture.<br>-&nbsp;Two main compartment with zipper closing.<br>-&nbsp;One main compartment for your luggage.<br>-&nbsp;Front main compartment to carry Laptop.<br>-&nbsp;Fornt small zipper pocket for mobile and small accessories.<br>-&nbsp;Two side pocket for water bottle cary.<br>-&nbsp;Durable YKK zippers throughout.<br>-&nbsp;Approximate dimensions: 17 x 12 x 5 inches<br>-&nbsp;Color: Saddle Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Leather Bagpack (Unisex)/1.png",
       "ASSESTS/Leather Bagpack (Unisex)/2.png",
@@ -88,8 +119,24 @@
     "sku": "GM-TB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "unisex", "travel", "backpack", "laptop", "bag"],
-    "createdAt": "2025-11-28T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "unisex",
+      "travel",
+      "backpack",
+      "laptop",
+      "bag"
+    ],
+    "createdAt": "2025-11-28T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 315,
+      "EUR": 285,
+      "CAD": 430,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 4,
@@ -97,12 +144,11 @@
     "name": "Leather Convertible Shoulder Bag & Backpack",
     "subName": "",
     "category": "Handbags",
-    "priceLabel": "EUR 160. Wholesale Price on request",
+    "priceLabel": "USD 175. EUR 160. CAD 240. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Premium genuine leather shoulder bag handcrafted in Pakistan for modern women who value luxury and timeless style. This bag can be used as a backpack as well. Features a secure zip closure, spacious main compartment, inner pocket, and outer front zipper pocket—perfect for work, travel, and everyday elegance.<br><br>-&nbsp;100% Genuine Leather, handcrafted by skilled artisans<br>-&nbsp;Convertibe to Backpack<br>-&nbsp;Secure zip closure with spacious main compartment<br>-&nbsp;Inner zipper pocket for organized storage<br>-&nbsp;Outer front zipper pocket for quick access essentials<br>-&nbsp;Elegant, minimal design for work and daily wear.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Premium genuine leather shoulder bag handcrafted in Pakistan for modern women who value luxury and timeless style. This bag can be used as a backpack as well. Features a secure zip closure, spacious main compartment, inner pocket, and outer front zipper pocket—perfect for work, travel, and everyday elegance.<br><br><strong>Features:</strong><br>-&nbsp;100% Genuine Leather, handcrafted by skilled artisans<br>-&nbsp;Convertibe to Backpack<br>-&nbsp;Secure zip closure with spacious main compartment<br>-&nbsp;Inner zipper pocket for organized storage<br>-&nbsp;Outer front zipper pocket for quick access essentials<br>-&nbsp;Elegant, minimal design for work and daily wear.<br>-&nbsp;Durable YKK zippers throughout<br>-&nbsp;Interior lined with 100% cotton fabric<br>-&nbsp;Approximate dimensions: 35cm (W) X 30cm (H) X 10cm (D)<br>-&nbsp;Color: Brown<br>-&nbsp;Weight: 0.5 kg",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Leather Convertible Shoulder Bag & Backpack/1.png",
       "ASSESTS/Leather Convertible Shoulder Bag & Backpack/2.png",
@@ -118,8 +164,25 @@
     "sku": "GM-HB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "ladies", "handbag", "classic", "shoulderbag", "women", "backpack"],
-    "createdAt": "2025-11-15T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "ladies",
+      "handbag",
+      "classic",
+      "shoulderbag",
+      "women",
+      "backpack"
+    ],
+    "createdAt": "2025-11-15T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 175,
+      "EUR": 160,
+      "CAD": 240,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 5,
@@ -132,7 +195,6 @@
     "description": "Elegant women’s leather clutch wallet crafted from pure cow leather. Features magnetic and zipper closure, card slots, cash compartments, and ID window—perfect for evenings, events, and everyday luxury carry.<br><br>-&nbsp;Premium pure cow leather construction<br>-&nbsp;Stylish adjustable handle strap for versatile carry<br>-&nbsp;Perfect for evenings, events, and everyday luxury carry.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Elegant women’s handmade leather clutch wallet crafted from pure cow leather. Features magnetic and zipper closure, card slots, cash compartments, and ID window—perfect for evenings, events, and everyday luxury carry.<br><br><strong>Features:</strong><br>-&nbsp;Premium pure cow leather construction<br>-&nbsp;Hand-crafted for style and luxury.<br>-&nbsp;Stylish adjustable handle strap for versatile carry<br>-&nbsp;Perfect for evenings, events, and everyday luxury carry.<br>-&nbsp;Color: Dark Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Wallet Clutch for Ladies/1.png",
       "ASSESTS/Wallet Clutch for Ladies/2.png",
@@ -147,8 +209,20 @@
     "sku": "GM-CL-002",
     "featured": false,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "ladies", "clutch", "wallet", "ladies"],
-    "createdAt": "2025-10-01T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "ladies",
+      "clutch",
+      "wallet",
+      "ladies"
+    ],
+    "createdAt": "2025-10-01T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 6,
@@ -156,12 +230,11 @@
     "name": "Ladies Evening Bag",
     "subName": "(Classic Design - Olive Green)",
     "category": "Clutches",
-    "priceLabel": "EUR 105. Wholesale Price on request",
+    "priceLabel": "USD 115. EUR 105. CAD 155. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Olive green leather shoulder bag crafted from premium vegetable-tanned cow leather. Lightweight and compact with a secure zip closure and inner pocket—perfect for daily essentials, brunch dates, and elegant evening outings.<br><br>-&nbsp;Premium vegetable-tanned cow leather<br>-&nbsp;Lightweight design (approx. 350g)<br>-&nbsp;Secure main zipped compartment<br>-&nbsp;Internal zipper pocket for essentials<br>-&nbsp;Fixed shoulder strap with 53 cm drop.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Olive green leather shoulder bag crafted from premium vegetable-tanned cow leather. Lightweight and compact with a secure zip closure and inner pocket—perfect for daily essentials, brunch dates, and elegant evening outings.<br><br><strong>Features:</strong><br>-&nbsp;Premium vegetable-tanned cow leather<br>-&nbsp;Lightweight design<br>-&nbsp;Secure main zipped compartment<br>-&nbsp;Internal zipper pocket for essentials<br>-&nbsp;Fixed shoulder strap with 53 cm drop<br>-&nbsp;Origin: Made in Pakistan<br>-&nbsp;Color: Olive Green<br>-&nbsp;Weight: 350g (approx)",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Ladies Evening Bag/1.png",
       "ASSESTS/Ladies Evening Bag/2.png",
@@ -174,8 +247,23 @@
     "sku": "GM-CL-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "ladies", "evening", "women", "shoulderbag"],
-    "createdAt": "2026-01-12T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "ladies",
+      "evening",
+      "women",
+      "shoulderbag"
+    ],
+    "createdAt": "2026-01-12T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 115,
+      "EUR": 105,
+      "CAD": 155,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 7,
@@ -188,7 +276,6 @@
     "description": "Vintage A6 shoulder & crossbody bag crafted from premium Crazy Horse leather. Designed for e-reader, wallet, phone, and keys, it offers secure storage, water resistance, and all-day comfort. Develops a rich patina over time—perfect for travel, walks, and daily use.<br><br>-&nbsp;Premium Crazy Horse full-grain leather<br>-&nbsp;Compact A6 size for phone, wallet & e-reader<br>-&nbsp;Water-resistant with secure compartments<br>-&nbsp;Wide leather strap for comfortable carry<br>-&nbsp;Ideal for travel, city walks & everyday wear.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Looking for a stylish yet practical solution for your everyday essentials? The practical vintage-look sling bag is just what you need. This sporty-elegant shoulder bag, crafted from high-quality Crazy Horse leather, combines classic elegance with modern functionality. Specifically designed for your e-reader, wallet, smartphone, and keys, it offers optimal storage space and protects your belongings in any weather thanks to its waterproof construction.<br><br>Over time, the bag develops a sophisticated patina that further emphasizes its vintage character and makes it increasingly valuable with age. Thanks to the handcrafted workmanship and sustainable genuine leather, you receive a durable product that perfectly complements your everyday life.<br><br>The well-designed interior layout ensures that you can always keep your belongings organized – making it the ideal messenger bag for walks, hikes, or sightseeing. Thanks to the wide shoulder straps made of the finest full-grain cowhide leather, you'll enjoy optimal carrying comfort and maximum freedom of movement.<br><br><strong>Features:</strong><br>-&nbsp;Premium Crazy Horse full-grain leather<br>-&nbsp;Compact A6 size for phone, wallet & e-reader<br>-&nbsp;Water-resistant with secure compartments<br>-&nbsp;Wide leather strap for comfortable carry<br>-&nbsp;Ideal for travel, city walks & everyday wear<br>-&nbsp;Clever, adjustable closure with roll buckle and snap closure<br>-&nbsp;2 pen holders; inside<br>-&nbsp;2 slip pockets (each 13 x 18 cm)<br>-&nbsp;1 zippered pocket (12 x 10 cm) on the front<br>-&nbsp;1 secret slip pocket (13 x 18 cm) on the front<br>-&nbsp;Adjustable, wide shoulder strap made of saddle leather on the back<br>-&nbsp;Lining: Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Opti Germany, YKK Japan<br>-&nbsp;Reinforced stress points with extra stitching and solid rivets<br>-&nbsp;Elegant metal fittings: double-headed rivets Solid roller buckles, eyelets<br>-&nbsp;Color: Saddle Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Crossbody Bag (Unisex)/1.png",
       "ASSESTS/Crossbody Bag (Unisex)/2.png",
@@ -204,8 +291,22 @@
     "sku": "GM-CB-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "crossbody", "sling bag", "messenger bag", "urban", "compact", "unisex"],
-    "createdAt": "2025-10-20T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "crossbody",
+      "sling bag",
+      "messenger bag",
+      "urban",
+      "compact",
+      "unisex"
+    ],
+    "createdAt": "2025-10-20T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 8,
@@ -218,7 +319,6 @@
     "description": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, hanging loop, side handle and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Durable YKK zipper closures<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Soft 100% cotton interior lining<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Built-in hanging loop for convenient bathroom use<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Luxury Toiletries Pouch - Large/1.png",
       "ASSESTS/Luxury Toiletries Pouch - Large/2.png",
@@ -231,8 +331,22 @@
     "sku": "GM-SK-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "shaving-kit", "toiletry", "travel", "men", "women", "unisex"],
-    "createdAt": "2025-08-20T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "shaving-kit",
+      "toiletry",
+      "travel",
+      "men",
+      "women",
+      "unisex"
+    ],
+    "createdAt": "2025-08-20T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 9,
@@ -245,7 +359,6 @@
     "description": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials.<br>-&nbsp;Packed in a Premium Quality Dust Cover/Bag.",
     "productInfo": "Premium full-grain leather toiletry bag handcrafted by skilled artisans. Features a spacious main compartment, front zipper pocket, durable YKK zippers, and 100% cotton lining. Compact yet roomy—perfect for travel, grooming kits, and everyday organization.<br><br><strong>Features:</strong><br>-&nbsp;100% full-grain genuine leather<br>-&nbsp;Spacious main compartment + front zip pocket<br>-&nbsp;Ideal for travel, gym, and daily grooming essentials<br>-&nbsp;Strong side handle for easy carrying<br>-&nbsp;Interior Lining: Soft Combed cotton<br>-&nbsp;Sewing thread: Serafil Amann Germany<br>-&nbsp;Zipper: Durable Opti Germany, YKK Japan<br>-&nbsp;Dimensions: 23 cm(L) X 12 cm(W) X 12 cm(H)<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Luxury Toiletries Pouch - Medium/1.png",
       "ASSESTS/Luxury Toiletries Pouch - Medium/2.png",
@@ -258,8 +371,23 @@
     "sku": "GM-SK-002",
     "featured": false,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "shaving-kit", "toiletry", "compact", "travel", "men", "women", "unisex"],
-    "createdAt": "2025-09-05T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "shaving-kit",
+      "toiletry",
+      "compact",
+      "travel",
+      "men",
+      "women",
+      "unisex"
+    ],
+    "createdAt": "2025-09-05T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 10,
@@ -267,12 +395,11 @@
     "name": "Men's Leather Jacket",
     "subName": "(Detatchable Fur Collar)",
     "category": "Jackets",
-    "priceLabel": "EUR 300. Wholesale Price on request",
+    "priceLabel": "USD 330. EUR 300. CAD 450. Wholesale Price on request",
     "imageFit": "contain",
     "description": "Premium men’s bomber jacket crafted from 100% buffalo leather in a rich two-tone finish. Features a detachable fur collar, durable YKK zipper closure, and soft inner lining for superior comfort and warmth. Designed for timeless style, everyday wear, and rugged winter protection.<br><br>-&nbsp;100% genuine buffalo leather construction<br>-&nbsp;Stylish two-tone vintage finish<br>-&nbsp;Detachable high-quality fur collar<br>-&nbsp;Durable YKK zipper closures<br>-&nbsp;Soft inner lining for warmth and comfort<br>-&nbsp;Ideal for winter wear, casual outings & travel",
     "productInfo": "Premium men’s bomber jacket crafted from 100% buffalo leather in a rich two-tone finish. Features a detachable fur collar, durable YKK zipper closure, and soft inner lining for superior comfort and warmth. Designed for timeless style, everyday wear, and rugged winter protection.<br><br><strong>Features:</strong><br>-&nbsp;100% genuine buffalo leather construction<br>-&nbsp;Stylish two-tone vintage finish<br>-&nbsp;Detachable high-quality fur collar<br>-&nbsp;Durable YKK zipper closures<br>-&nbsp;Soft inner lining for warmth and comfort<br>-&nbsp;Ideal for winter wear, casual outings & travel<br>-&nbsp;Size: As per demand<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Men's Leather Jacket/1.png",
       "ASSESTS/Men's Leather Jacket/2.png",
@@ -284,8 +411,22 @@
     "sku": "GM-JK-001",
     "featured": false,
     "availability": "Made to order",
-    "tags": ["leather", "handmade", "premium", "jacket", "moto", "men"],
-    "createdAt": "2025-08-01T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "jacket",
+      "moto",
+      "men"
+    ],
+    "createdAt": "2025-08-01T00:00:00Z",
+    "pricing": {
+      "mode": "fixed",
+      "USD": 330,
+      "EUR": 300,
+      "CAD": 450,
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 11,
@@ -298,7 +439,6 @@
     "description": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day.The uniqueness of the product is highlighted by the use of hand-stitched leather with an interesting rough texture. <br><br>-&nbsp;Handmade with 100% Natural Leather.<br>-&nbsp;Two generous note compartments<br>-&nbsp;Six credit card slots<br>-&nbsp;Mesh pocket for documents<br>-&nbsp;Coin pocket with zip",
     "productInfo": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day. The uniqueness of the product is highlighted by the use of hand-stitched leather with an interesting rough texture. <br><br><strong>Features:</strong><br>-&nbsp;Handmade with 100% Natural Leather.<br>-&nbsp;Two generous note compartments<br>-&nbsp;Six credit card slots<br>-&nbsp;Mesh pocket for documents<br>-&nbsp;Coin pocket with zip<br>-&nbsp;Small inner compartment.<br>-&nbsp;Dimensions: 12 x 9 x 3 cm<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Men's Leather Wallet - Brown/1.png",
       "ASSESTS/Men's Leather Wallet - Brown/2.png",
@@ -308,8 +448,21 @@
     "sku": "GM-WL-001",
     "featured": true,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men", "brown"],
-    "createdAt": "2026-01-05T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "wallet",
+      "bifold",
+      "executive",
+      "men",
+      "brown"
+    ],
+    "createdAt": "2026-01-05T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 12,
@@ -322,7 +475,6 @@
     "description": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day.<br><br>-&nbsp;100% Handcrafted.<br>-& 100% Full-grain Leather.<br>-&nbsp;Edges are hand-burnished<br>-&nbsp;One open pocket for cash<br>-&nbsp;Six credit card slots",
     "productInfo": "Classic leather wallet for men. Despite its compact dimensions, the wallet has a number of functional compartments for all the things you carry with you every day. <br><br><strong>Features:</strong><br>-&nbsp;100% Handcrafted.<br>-& 100% Full-grain Leather.<br>-&nbsp;100%Hand Stitched<br>-&nbsp;Edges are hand-burnished<br>-&nbsp;One open pocket for cash<br>-&nbsp;Six credit card slots<br>-&nbsp;Dimensions: 12 x 9 x 3 cm<br>-&nbsp;Color: Black",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Men's Leather Wallet - Black/1.png",
       "ASSESTS/Men's Leather Wallet - Black/2.png",
@@ -333,8 +485,21 @@
     "sku": "GM-WL-002",
     "featured": false,
     "availability": "Available",
-    "tags": ["leather", "handmade", "premium", "wallet", "bifold", "executive", "men","black"],
-    "createdAt": "2026-02-17T00:00:00Z"
+    "tags": [
+      "leather",
+      "handmade",
+      "premium",
+      "wallet",
+      "bifold",
+      "executive",
+      "men",
+      "black"
+    ],
+    "createdAt": "2026-02-17T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   },
   {
     "id": 13,
@@ -347,7 +512,6 @@
     "description": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.<br><br>-&nbsp;100% Genuine Leather<br>-&nbsp;100% Handmade by talented craftsmen<br>-&nbsp;Adjustable Length<br>-&nbsp;Dimensions: 4mm (Thickness) X 38mm(Width) X Adjustable(Length)",
     "productInfo": "A refined belt handcrafted from full-grain leather with a solid brass buckle. The raw edge finish showcases the natural leather character.<br><br><strong>Features:</strong><br>-&nbsp;100% Genuine Leather<br>-&nbsp;100% Handmade by talented craftsmen<br>-&nbsp;Adjustable Length<br>-&nbsp;Dimensions: 4mm (Thickness) X 38mm(Width) X Adjustable(Length)<br>-&nbsp;Color: Brown",
     "careInfo": "<p style=\"margin-top: 0.75rem;\"><strong>Care:</strong> To preserve the natural beauty of your leather, keep it away from prolonged moisture and direct sunlight. Clean with a soft, dry cloth. We recommend conditioning with a quality leather balm every 3–6 months depending on use.</p>",
-    
     "images": [
       "ASSESTS/Men's Leather Belt/1.png",
       "ASSESTS/Men's Leather Belt/2.png",
@@ -361,7 +525,16 @@
     "sku": "GM-BT-001",
     "featured": false,
     "availability": "Available",
-    "tags": ["belt", "leather", "brass", "men"],
-    "createdAt": "2025-12-15T00:00:00Z"
+    "tags": [
+      "belt",
+      "leather",
+      "brass",
+      "men"
+    ],
+    "createdAt": "2025-12-15T00:00:00Z",
+    "pricing": {
+      "mode": "request_only",
+      "note": "Wholesale Price on request"
+    }
   }
 ]

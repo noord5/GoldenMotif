@@ -399,6 +399,7 @@
 
     <!-- Scripts -->
     <script src="js/utils.js" defer></script>
+    <script src="js/currency.js" defer></script>
     <script src="js/products.js" defer></script>
     <script src="js/catalogue.js" defer></script>
     <script src="js/main.js" defer></script>
@@ -408,11 +409,18 @@
         const grid = document.getElementById("featured-grid");
         if (!grid) return;
         const allProducts = await ProductStore.getAll();
-        allProducts.forEach((product, i) => {
-          grid.appendChild(createProductCard(product, i));
-        });
-        initRevealAnimations();
-        initLazyImages();
+
+        const renderFeatured = () => {
+          grid.innerHTML = "";
+          allProducts.forEach((product, i) => {
+            grid.appendChild(createProductCard(product, i));
+          });
+          initRevealAnimations();
+          initLazyImages();
+        };
+
+        renderFeatured();
+        window.addEventListener("currencychange", renderFeatured);
       });
     </script>
   </body>

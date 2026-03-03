@@ -99,6 +99,14 @@
     gap: var(--space-sm);
   }
 
+  .navbar__actions .currency-switcher {
+    display: none;
+  }
+
+  .mobile-nav .currency-switcher--mobile {
+    display: inline-flex;
+  }
+
   /* Hero */
 
   .hero__content {

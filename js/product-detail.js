@@ -36,6 +36,14 @@ async function initProductDetail() {
   const related = await ProductStore.getRelated(product, 4);
   renderRelated(related);
 
+  window.addEventListener("currencychange", () => {
+    const priceEl = container.querySelector(".product-info__price");
+    if (priceEl) {
+      priceEl.textContent = getProductDetailPrice(product);
+    }
+    renderRelated(related, true);
+  });
+
   initRevealAnimations();
   initLazyImages();
 }
@@ -46,6 +54,7 @@ async function initProductDetail() {
 function renderProduct(container, product) {
   const mainImage =
     product.images && product.images[0] ? product.images[0] : "";
+  const priceText = getProductDetailPrice(product);
 
   const fitClass = product.imageFit === "contain" ? "object-contain" : "";
 
@@ -96,7 +105,7 @@ function renderProduct(container, product) {
             ${product.name}
             ${product.subName ? `<span class="product-info__subtitle">${product.subName}</span>` : ""}
           </h1>
-          <span class="product-info__price">${product.priceLabel}</span>
+          <span class="product-info__price">${priceText}</span>
           <p class="product-info__desc">${product.description}</p>
 
           <div class="product-info__meta">
@@ -249,11 +258,19 @@ function renderRelated(products) {
   const grid = section.querySelector(".collections-grid");
   if (!grid) return;
 
+  grid.innerHTML = "";
   products.forEach((product, i) => {
     grid.appendChild(createProductCard(product, i));
   });
 
   section.style.display = "block";
+}
+
+function getProductDetailPrice(product) {
+  if (window.CurrencyService && typeof CurrencyService.getDisplayPrice === "function") {
+    return CurrencyService.getDisplayPrice(product, { includeNote: true });
+  }
+  return product.priceLabel || "Wholesale Price on request";
 }
 
 /**
