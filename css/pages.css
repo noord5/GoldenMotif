@@ -545,16 +545,36 @@
 }
 
 .product-info__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: -0.35rem;
+  margin-bottom: -0.35rem;
+}
+
+.product-info__price-amount {
   font-family: var(--ff-heading);
   font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
   color: var(--clr-accent-dark);
-  margin-top: -0.35rem;
-  margin-bottom: -0.35rem;
   font-variant-numeric: lining-nums;
   -moz-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
+}
+
+.product-info__price-note {
+  font-family: var(--ff-body);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--clr-text-light);
+  letter-spacing: 0.01em;
+}
+
+.product-info__price-note.is-only {
+  font-size: var(--fs-body);
+  color: var(--clr-accent-dark);
 }
 
 .product-info__desc {

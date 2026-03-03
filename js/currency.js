@@ -11,6 +11,11 @@ const CurrencyService = (() => {
   const DEFAULT_CURRENCY = "USD";
   const STORAGE_KEY = "gm_currency";
   const GEO_IP_URL = "https://ipapi.co/json/";
+  const CURRENCY_SYMBOL = {
+    USD: "$",
+    EUR: "€",
+    CAD: "C$",
+  };
 
   const EURO_COUNTRIES = new Set([
     "AD", "AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR",
@@ -170,24 +175,42 @@ const CurrencyService = (() => {
   }
 
   function formatAmount(amount, currency = currentCurrency) {
-    return new Intl.NumberFormat(undefined, {
-      style: "currency",
-      currency,
+    const normalized = normalizeCurrency(currency);
+    const rounded = Math.round(Number(amount) || 0);
+    const number = new Intl.NumberFormat("en-US", {
       maximumFractionDigits: 0,
-    }).format(amount);
+    }).format(rounded);
+
+    const symbol = CURRENCY_SYMBOL[normalized] || `${normalized} `;
+    return `${symbol}${number}`;
+  }
+
+  function getDisplayPriceParts(product) {
+    const note = product?.pricing?.note || "Wholesale Price on request";
+    const amount = getNumericPrice(product, currentCurrency);
+    const amountText = typeof amount === "number" ? formatAmount(amount, currentCurrency) : "";
+
+    return {
+      amount,
+      amountText,
+      noteText: note,
+      hasAmount: typeof amount === "number",
+    };
   }
 
   function getDisplayPrice(product, options = {}) {
     const includeNote = Boolean(options.includeNote);
-    const note = product?.pricing?.note || "";
-    const fallback = product?.priceLabel || note || "Wholesale Price on request";
-    const amount = getNumericPrice(product, currentCurrency);
+    const parts = getDisplayPriceParts(product);
 
-    if (typeof amount !== "number") return fallback;
+    if (!parts.hasAmount) {
+      return parts.noteText;
+    }
 
-    const priceText = formatAmount(amount, currentCurrency);
-    if (includeNote && note) return `${priceText}. ${note}`;
-    return priceText;
+    if (includeNote && parts.noteText) {
+      return `${parts.amountText} · ${parts.noteText}`;
+    }
+
+    return parts.amountText;
   }
 
   return {
@@ -195,6 +218,7 @@ const CurrencyService = (() => {
     setCurrency,
     getCurrentCurrency,
     getDisplayPrice,
+    getDisplayPriceParts,
     getNumericPrice,
     formatAmount,
     supportedCurrencies: [...SUPPORTED],

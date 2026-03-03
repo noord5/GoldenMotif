@@ -39,7 +39,7 @@ async function initProductDetail() {
   window.addEventListener("currencychange", () => {
     const priceEl = container.querySelector(".product-info__price");
     if (priceEl) {
-      priceEl.textContent = getProductDetailPrice(product);
+      priceEl.innerHTML = getProductDetailPriceMarkup(product);
     }
     renderRelated(related, true);
   });
@@ -54,7 +54,7 @@ async function initProductDetail() {
 function renderProduct(container, product) {
   const mainImage =
     product.images && product.images[0] ? product.images[0] : "";
-  const priceText = getProductDetailPrice(product);
+  const priceMarkup = getProductDetailPriceMarkup(product);
 
   const fitClass = product.imageFit === "contain" ? "object-contain" : "";
 
@@ -105,7 +105,7 @@ function renderProduct(container, product) {
             ${product.name}
             ${product.subName ? `<span class="product-info__subtitle">${product.subName}</span>` : ""}
           </h1>
-          <span class="product-info__price">${priceText}</span>
+          <div class="product-info__price">${priceMarkup}</div>
           <p class="product-info__desc">${product.description}</p>
 
           <div class="product-info__meta">
@@ -266,11 +266,23 @@ function renderRelated(products) {
   section.style.display = "block";
 }
 
-function getProductDetailPrice(product) {
-  if (window.CurrencyService && typeof CurrencyService.getDisplayPrice === "function") {
-    return CurrencyService.getDisplayPrice(product, { includeNote: true });
+function getProductDetailPriceMarkup(product) {
+  if (window.CurrencyService && typeof CurrencyService.getDisplayPriceParts === "function") {
+    const parts = CurrencyService.getDisplayPriceParts(product);
+    if (parts.hasAmount && parts.noteText) {
+      return `
+        <span class="product-info__price-amount">${parts.amountText}</span>
+        <span class="product-info__price-note">${parts.noteText}</span>
+      `;
+    }
+    if (parts.hasAmount) {
+      return `<span class="product-info__price-amount">${parts.amountText}</span>`;
+    }
+    return `<span class="product-info__price-note is-only">${parts.noteText}</span>`;
   }
-  return product.priceLabel || "Wholesale Price on request";
+
+  const fallback = product.priceLabel || "Wholesale Price on request";
+  return `<span class="product-info__price-note is-only">${fallback}</span>`;
 }
 
 /**
