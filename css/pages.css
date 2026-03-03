@@ -586,11 +586,11 @@
 }
 
 .product-info__price-amount.is-code {
-  gap: 0;
+  gap: 0.18em;
 }
 
 .product-info__price-amount.is-code .product-info__price-symbol {
-  font-size: 0.48em;
+  font-size: 0.56em;
   font-weight: var(--fw-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
