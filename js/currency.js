@@ -201,3 +201,8 @@ const CurrencyService = (() => {
     defaultCurrency: DEFAULT_CURRENCY,
   };
 })();
+
+// Expose to window so other scripts can consume it reliably.
+if (typeof window !== "undefined") {
+  window.CurrencyService = CurrencyService;
+}
