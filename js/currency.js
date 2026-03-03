@@ -11,11 +11,19 @@ const CurrencyService = (() => {
   const DEFAULT_CURRENCY = "USD";
   const STORAGE_KEY = "gm_currency";
   const GEO_IP_URL = "https://ipapi.co/json/";
-  const CURRENCY_SYMBOL = {
-    USD: "$",
-    EUR: "€",
-    CAD: "C$",
-  };
+
+  function getCurrencyPresentation(currency) {
+    switch (currency) {
+      case "USD":
+        return { prefix: "$", separator: "", isCodePrefix: false };
+      case "EUR":
+        return { prefix: "€", separator: "", isCodePrefix: false };
+      case "CAD":
+        return { prefix: "CAD", separator: " ", isCodePrefix: true };
+      default:
+        return { prefix: currency, separator: " ", isCodePrefix: true };
+    }
+  }
 
   const EURO_COUNTRIES = new Set([
     "AD", "AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR",
@@ -181,18 +189,37 @@ const CurrencyService = (() => {
       maximumFractionDigits: 0,
     }).format(rounded);
 
-    const symbol = CURRENCY_SYMBOL[normalized] || `${normalized} `;
-    return `${symbol}${number}`;
+    const presentation = getCurrencyPresentation(normalized);
+    return `${presentation.prefix}${presentation.separator}${number}`;
+  }
+
+  function formatNumberOnly(amount) {
+    return new Intl.NumberFormat("en-US", {
+      maximumFractionDigits: 0,
+    }).format(Math.round(Number(amount) || 0));
   }
 
   function getDisplayPriceParts(product) {
     const note = product?.pricing?.note || "Wholesale Price on request";
     const amount = getNumericPrice(product, currentCurrency);
-    const amountText = typeof amount === "number" ? formatAmount(amount, currentCurrency) : "";
+    const normalized = normalizeCurrency(currentCurrency);
+    const presentation = getCurrencyPresentation(normalized);
+    const symbolText = presentation.isCodePrefix
+      ? `${presentation.prefix} `
+      : presentation.prefix;
+    const valueText = typeof amount === "number" ? formatNumberOnly(amount) : "";
+    const amountText =
+      typeof amount === "number"
+        ? `${presentation.prefix}${presentation.separator}${valueText}`
+        : "";
 
     return {
       amount,
+      currency: normalized,
+      symbolText,
+      valueText,
       amountText,
+      isCodePrefix: presentation.isCodePrefix,
       noteText: note,
       hasAmount: typeof amount === "number",
     };

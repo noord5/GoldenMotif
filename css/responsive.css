@@ -187,6 +187,18 @@
     justify-content: center;
   }
 
+  .product-info__price {
+    gap: 0.55rem;
+  }
+
+  .product-info__price-amount {
+    font-size: clamp(1.55rem, 8vw, 2rem);
+  }
+
+  .product-info__price-note {
+    font-size: var(--fs-small);
+  }
+
   /* Testimonials */
   .testimonial-card {
     padding: var(--space-xl);

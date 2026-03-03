@@ -271,12 +271,20 @@ function getProductDetailPriceMarkup(product) {
     const parts = CurrencyService.getDisplayPriceParts(product);
     if (parts.hasAmount && parts.noteText) {
       return `
-        <span class="product-info__price-amount">${parts.amountText}</span>
+        <span class="product-info__price-amount${parts.isCodePrefix ? " is-code" : ""}" aria-label="${parts.amountText}">
+          <span class="product-info__price-symbol">${parts.symbolText}</span>
+          <span class="product-info__price-value">${parts.valueText}</span>
+        </span>
         <span class="product-info__price-note">${parts.noteText}</span>
       `;
     }
     if (parts.hasAmount) {
-      return `<span class="product-info__price-amount">${parts.amountText}</span>`;
+      return `
+        <span class="product-info__price-amount${parts.isCodePrefix ? " is-code" : ""}" aria-label="${parts.amountText}">
+          <span class="product-info__price-symbol">${parts.symbolText}</span>
+          <span class="product-info__price-value">${parts.valueText}</span>
+        </span>
+      `;
     }
     return `<span class="product-info__price-note is-only">${parts.noteText}</span>`;
   }

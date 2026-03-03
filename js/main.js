@@ -69,7 +69,7 @@ function injectHeader() {
             >
               <option value="USD">USD ($)</option>
               <option value="EUR">EUR (€)</option>
-              <option value="CAD">CAD (C$)</option>
+              <option value="CAD">CAD</option>
             </select>
           </div>
 
@@ -92,7 +92,7 @@ function injectHeader() {
         >
           <option value="USD">USD ($)</option>
           <option value="EUR">EUR (€)</option>
-          <option value="CAD">CAD (C$)</option>
+          <option value="CAD">CAD</option>
         </select>
       </div>
       <a href="index.html" class="mobile-nav__link">Home</a>
