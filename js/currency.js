@@ -1,14 +1,14 @@
 /* ========================================
    CURRENCY.JS - Golden Motif
    Fixed multi-currency display with:
-   - USD default fallback
+   - EUR default fallback
    - Geo-based auto currency (US/CA/EUR region)
    - Manual override with persistence
    ======================================== */
 
 const CurrencyService = (() => {
   const SUPPORTED = ["USD", "EUR", "CAD"];
-  const DEFAULT_CURRENCY = "USD";
+  const DEFAULT_CURRENCY = "EUR";
   const STORAGE_KEY = "gm_currency";
   const GEO_IP_URL = "https://ipapi.co/json/";
 
