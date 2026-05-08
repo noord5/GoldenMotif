@@ -128,10 +128,12 @@ function injectFooter() {
             </a>
             <p class="footer__brand-text">Crafting timeless leather goods since our founding. Every piece tells a story of artisanship, quality, and enduring style.</p>
             <div class="footer__socials">
-              <a href="#" class="footer__social-link" aria-label="Instagram">${Icons.instagram}</a>
-              <a href="#" class="footer__social-link" aria-label="Facebook">${Icons.facebook}</a>
+              <a href="https://www.instagram.com/goldenmotif6/" target="_blank" class="footer__social-link" aria-label="Instagram">${Icons.instagram}</a>
+              <a href="https://www.facebook.com/profile.php?id=61589192874405" target="_blank" class="footer__social-link" aria-label="Facebook">${Icons.facebook}</a>
+              <!--
               <a href="#" class="footer__social-link" aria-label="Twitter">${Icons.twitter}</a>
               <a href="#" class="footer__social-link" aria-label="LinkedIn">${Icons.linkedin}</a>
+              -->
             </div>
           </div>
 
