@@ -127,7 +127,7 @@ function renderProduct(container, product) {
           <div class="product-info__buttons">
             <a href="${product.EtsyLink}" class="btn btn--primary" target="_blank">
               ${Icons.mail} BUY NOW ON ETSY
-            </a> &nbsp; Secure checkout and buyer protection through Etsy
+            </a> &nbsp; <span style="font-size: 0.9em; color: #555;">Secure checkout and buyer protection through Etsy</span>
           </div>
 
 
