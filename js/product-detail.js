@@ -123,6 +123,14 @@ function renderProduct(container, product) {
             </div>
           </div>
 
+
+          <div class="product-info__buttons">
+            <a href="${product.EtsyLink}" class="btn btn--primary">
+              ${Icons.mail} BUY NOW ON ETSY
+            </a>
+          </div>
+
+
           <div class="product-info__buttons">
             <a href="contact.html" class="btn btn--primary">
               ${Icons.mail} REQUEST WHOLESALE PRICE
