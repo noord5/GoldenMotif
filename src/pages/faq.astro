@@ -1,0 +1,104 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/products.js";
+
+const faqs = [
+  {
+    q: "Where can I buy Golden Motif products?",
+    a: "All products are sold through our Etsy shop, GoldenMotifEU, with secure checkout and Etsy's buyer protection. Each product page on this site has a Buy now on Etsy button that links to the listing. For wholesale or bulk orders, contact us.",
+  },
+  {
+    q: "What type of leather do you use?",
+    a: "Many of our bags, wallets, aprons and belts are made from full-grain leather, including crazy horse leather. Our shoes and boots use full-grain genuine leather, and some pairs are in suede. The leather type is listed on each product page.",
+  },
+  {
+    q: "How do I care for my leather product?",
+    a: "Keep your leather goods dry and store them in the dust bag provided. Clean with a soft cloth and apply a quality leather conditioner every 3 to 6 months. Avoid prolonged sunlight to prevent fading. Suede should be brushed gently with a suede brush and protected with a suede spray, and should not be treated with balms.",
+  },
+  {
+    q: "Do you offer custom or bulk orders?",
+    a: "Yes. We welcome custom orders for corporate gifting, hotel amenities, restaurant aprons and bespoke personal pieces. Contact us with your requirements and we will provide a tailored proposal.",
+  },
+  {
+    q: "How long does an order take?",
+    a: "Shoes and boots are made to order: manufacturing takes 6 to 8 working days and delivery takes 6 to 9 days after production. Custom and made-to-order pieces typically take 3 to 4 weeks. Bulk orders can take longer, and we confirm timelines once we understand your needs.",
+  },
+  {
+    q: "Do you ship internationally?",
+    a: "Yes, we ship worldwide via insured carriers. International delivery typically takes 7 to 14 business days depending on the destination. Customs duties and taxes, if applicable, are the responsibility of the buyer.",
+  },
+  {
+    q: "What is your returns policy?",
+    a: "Returns and exchanges are accepted within 14 days. Buyers are responsible for return postage costs, and if an item is not returned in its original condition the buyer is responsible for any loss in value. Please contact us before sending anything back.",
+  },
+  {
+    q: "What shoe sizes do you offer?",
+    a: "Our shoes and boots are available in EU men's sizes 38 to 49, including half sizes. A size conversion chart is included in the photos on each shoe and boot page.",
+  },
+  {
+    q: "Can I choose the colour of my shoes?",
+    a: "Yes. You can request your preferred leather colour or shade. Please message us before placing your order to discuss colour and available leather options. Customisation is subject to leather availability.",
+  },
+  {
+    q: "How do you pack your products?",
+    a: "Every Golden Motif product is carefully wrapped and placed inside a premium-quality dust cover made from soft, breathable fabric, to protect it from dust, moisture and scratches in transit.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "FAQ", item: `${SITE}/faq/` },
+    ],
+  },
+];
+---
+<Base
+  title="FAQ: Leather, Care, Shipping & Sizes | Golden Motif"
+  description="Answers to common questions about Golden Motif's handmade leather shoes and bags: leather types, care, sizes, delivery times, returns and custom orders."
+  path="/faq/"
+  jsonLd={jsonLd}
+>
+  <main id="main-content">
+    <section class="catalogue-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Help</span>
+        <h1 class="catalogue-header__title" id="page-title">Frequently Asked Questions</h1>
+        <p class="catalogue-header__text">Quick answers about our leather, sizes, delivery and returns.</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container container--narrow">
+        <div class="accordion">
+          {faqs.map((f) => (
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false">
+                {f.q}
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <div class="accordion__content-inner">
+                  <p>{f.a}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p style="margin-top: 2rem;">More detail: <a href="/shipping-returns/">shipping and returns</a>, <a href="/materials-and-care/">materials and care</a>, or <a href="/contact/">contact us</a>.</p>
+      </div>
+    </section>
+  </main>
+</Base>

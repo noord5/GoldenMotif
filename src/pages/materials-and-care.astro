@@ -1,0 +1,73 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/products.js";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Materials & care", item: `${SITE}/materials-and-care/` },
+    ],
+  },
+];
+const list = "padding-left: 1.25rem; list-style: disc; margin: 0.75rem 0 1.5rem;";
+---
+<Base
+  title="Leather Materials & Care Guide | Golden Motif"
+  description="The leathers Golden Motif uses (full-grain, crazy horse, vegetable-tanned and suede), what the hardware is made of, and how to care for your leather goods."
+  path="/materials-and-care/"
+  jsonLd={jsonLd}
+>
+  <main id="main-content">
+    <section class="catalogue-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Help</span>
+        <h1 class="catalogue-header__title" id="page-title">Materials &amp; Care</h1>
+        <p class="catalogue-header__text">What our products are made from, and how to keep them looking their best.</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container container--narrow">
+        <h2 class="section-title" style="text-align:left;">The leathers we use</h2>
+        <ul style={list}>
+          <li><strong>Full-grain leather</strong> keeps the natural top layer of the hide, including its grain. It is strong, wears well and develops a patina over time. Many of our bags, wallets, aprons, belts and shoes are made from full-grain leather.</li>
+          <li><strong>Crazy horse leather</strong> is a full-grain leather with a distressed, pull-up look. Its surface shows natural variation, and marks and scratches add to its character. Our duffle, backpack, apron and crossbody bag use it.</li>
+          <li><strong>Vegetable-tanned leather</strong> is tanned with plant-based materials. It tends to age gracefully and develop a rich colour with use. Our Traveler Leather Duffle and Ladies Evening Bag use vegetable-tanned leather.</li>
+          <li><strong>Suede</strong> has a soft, napped surface. It feels very soft but needs more care around water. Some of our chukka boots, ankle boots and Chelsea boots are suede.</li>
+          <li><strong>Buffalo and cow leather</strong> are used across our range, and each product page lists the exact leather for that item.</li>
+        </ul>
+
+        <h2 class="section-title" style="text-align:left;">Linings, hardware and stitching</h2>
+        <ul style={list}>
+          <li>Our shoes and boots have soft leather linings and durable leather soles, with a leather heel and a rubber quarter tip for extra grip.</li>
+          <li>Many of our bags are lined in 100% cotton and use YKK zippers.</li>
+          <li>Our duffle and belt use solid brass hardware.</li>
+          <li>Our products are handcrafted, and many are hand-stitched.</li>
+        </ul>
+
+        <h2 class="section-title" style="text-align:left;">How leather ages</h2>
+        <p>Natural leather changes with use. Its colour deepens, it softens, and it picks up marks that make each piece unique. This is called patina, and it is a sign of real leather rather than a defect. Slight differences in grain, shade and finish between pieces are normal.</p>
+
+        <h2 class="section-title" style="text-align:left; margin-top: 2rem;">Caring for smooth leather</h2>
+        <ul style={list}>
+          <li>Keep your leather goods dry and store them in the dust bag provided.</li>
+          <li>Clean with a soft, dry cloth.</li>
+          <li>Apply a quality leather conditioner every 3 to 6 months, depending on use.</li>
+          <li>Avoid prolonged moisture and direct sunlight, which can dry or fade leather.</li>
+        </ul>
+
+        <h2 class="section-title" style="text-align:left;">Caring for suede</h2>
+        <ul style={list}>
+          <li>Keep suede dry.</li>
+          <li>Brush gently with a suede brush to lift dirt and restore the surface.</li>
+          <li>Use a suede protector spray, and avoid leather balms and prolonged moisture.</li>
+        </ul>
+
+        <p style="margin-top: 2rem;">Questions? See our <a href="/faq/">FAQ</a>, read about <a href="/shipping-returns/">shipping and returns</a>, or <a href="/contact/">contact us</a>.</p>
+      </div>
+    </section>
+  </main>
+</Base>

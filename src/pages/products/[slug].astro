@@ -217,6 +217,21 @@ const metaDescription = truncate(product.description);
       </div>
     </section>
 
+    {product.about && (
+      <section class="section--sm product-about" aria-labelledby="about-title">
+        <div class="container container--narrow">
+          <h2 class="section-title" id="about-title" style="text-align:left;">About the {product.name}</h2>
+          <div class="product-about__text" set:html={product.about}></div>
+          <p style="margin-top: 1rem;">
+            <a href={categoryUrl(product.category)}>More {product.category.toLowerCase()}</a> ·
+            <a href="/materials-and-care/">Materials &amp; care</a> ·
+            <a href="/shipping-returns/">Shipping &amp; returns</a> ·
+            <a href="/faq/">FAQ</a>
+          </p>
+        </div>
+      </section>
+    )}
+
     {related.length > 0 && (
       <section class="section section--alt related-products" id="related-products" aria-labelledby="related-title">
         <div class="container">

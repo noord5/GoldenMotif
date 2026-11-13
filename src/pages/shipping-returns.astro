@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/products.js";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Shipping & returns", item: `${SITE}/shipping-returns/` },
+    ],
+  },
+];
+const list = "padding-left: 1.25rem; list-style: disc; margin: 0.75rem 0 1.5rem;";
+---
+<Base
+  title="Shipping & Returns | Golden Motif"
+  description="Golden Motif shipping and returns: how to order, production and delivery times for our handmade leather shoes and bags, and our 14-day returns policy."
+  path="/shipping-returns/"
+  jsonLd={jsonLd}
+>
+  <main id="main-content">
+    <section class="catalogue-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Help</span>
+        <h1 class="catalogue-header__title" id="page-title">Shipping &amp; Returns</h1>
+        <p class="catalogue-header__text">How to order, how long it takes, and what to do if you need to send something back.</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container container--narrow">
+        <h2 class="section-title" style="text-align:left;">How to order</h2>
+        <p>Every Golden Motif product can be bought through our Etsy shop, <a href="https://goldenmotifeu.etsy.com" target="_blank" rel="noopener">GoldenMotifEU</a>. Checkout is handled securely by Etsy, and Etsy's Purchase Protection applies to eligible orders. Each product page on this site has a "Buy now on Etsy" button that takes you to the matching listing.</p>
+        <p style="margin-top: 0.75rem;">For wholesale, bulk or custom orders, please <a href="/contact/">contact us</a> and we will send a tailored proposal.</p>
+
+        <h2 class="section-title" style="text-align:left; margin-top: 2rem;">Production and delivery time</h2>
+        <ul style={list}>
+          <li><strong>Shoes and boots</strong> are made to order. Manufacturing takes 6 to 8 working days, and delivery takes 6 to 9 days after production.</li>
+          <li><strong>Custom and made-to-order pieces</strong> typically take 3 to 4 weeks. Bulk orders can take longer, and we confirm the timeline once we understand your needs.</li>
+          <li><strong>Other items:</strong> the expected timing is shown on the Etsy listing for each product.</li>
+        </ul>
+        <p>Because each pair of shoes is crafted especially for you, please allow time for our artisans to make your order.</p>
+
+        <h2 class="section-title" style="text-align:left; margin-top: 2rem;">Delivery</h2>
+        <p>We ship worldwide via insured carriers. International delivery typically takes 7 to 14 business days depending on the destination. Customs duties and taxes, if applicable, are the responsibility of the buyer.</p>
+
+        <h2 class="section-title" style="text-align:left; margin-top: 2rem;">Returns and exchanges</h2>
+        <ul style={list}>
+          <li>Returns and exchanges are accepted within 14 days.</li>
+          <li>Buyers are responsible for return postage costs.</li>
+          <li>If the item is not returned in its original condition, the buyer is responsible for any loss in value.</li>
+        </ul>
+        <p>Please <a href="/contact/">contact us</a> before sending anything back, so we can help with sizing questions or any problem with your order.</p>
+
+        <h2 class="section-title" style="text-align:left; margin-top: 2rem;">Made-to-order and colour requests</h2>
+        <p>Our shoes and boots can be made in your preferred leather colour or shade. Please message us before placing your order to discuss colour and available leather options. Customisation is subject to leather availability.</p>
+
+        <p style="margin-top: 2rem;">Looking for something else? See our <a href="/faq/">FAQ</a> or <a href="/materials-and-care/">materials and care guide</a>.</p>
+      </div>
+    </section>
+  </main>
+</Base>
