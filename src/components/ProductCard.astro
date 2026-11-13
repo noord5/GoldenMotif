@@ -28,6 +28,7 @@ const first = validImages(product.images)[0];
         sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 380px"
         format="webp"
         loading={eager ? "eager" : "lazy"}
+        fetchpriority={eager && index === 0 ? "high" : undefined}
       />
     )}
     {product.featured && <span class="product-card__badge">Featured</span>}

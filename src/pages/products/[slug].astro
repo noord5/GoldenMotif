@@ -81,7 +81,7 @@ const metaDescription = truncate(product.description);
               </button>
               <div class={`product-gallery__main ${fitClass}`}>
                 {images[0] && (
-                  <Image src={asset(images[0])} alt={product.name} id="gallery-main-img" widths={[600, 900, 1200]} sizes="(max-width: 900px) 100vw, 600px" format="webp" loading="eager" />
+                  <Image src={asset(images[0])} alt={product.name} id="gallery-main-img" widths={[600, 900, 1200]} sizes="(max-width: 900px) 100vw, 600px" format="webp" loading="eager" fetchpriority="high" />
                 )}
               </div>
               <button class="product-gallery__main-nav next" id="main-next" aria-label="Next image">
