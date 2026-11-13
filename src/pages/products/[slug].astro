@@ -20,7 +20,9 @@ const url = `${SITE}${productUrl(product)}`;
 const fullName = product.subName ? `${product.name} ${product.subName}` : product.name;
 
 const mainUrls = await Promise.all(images.map((img) => imageUrl(img, 1200)));
-const absImages = mainUrls.map((u) => `${SITE}${u}`);
+const isChart = (p) => /size-chart\./.test(p);
+const absImages = mainUrls.filter((_, i) => !isChart(images[i])).map((u) => `${SITE}${u}`);
+const pageTitle = product.seoTitle || `${fullName} | Golden Motif`;
 
 const eur = product.pricing?.EUR;
 const productSchema = {
@@ -58,9 +60,9 @@ const breadcrumbSchema = {
 const metaDescription = truncate(product.description);
 ---
 <Base
-  title={`${fullName} | Golden Motif`}
+  title={pageTitle}
   description={metaDescription}
-  ogTitle={`${fullName} | Golden Motif`}
+  ogTitle={pageTitle}
   ogDescription={metaDescription}
   ogType="product"
   ogImage={absImages[0]}
@@ -90,7 +92,7 @@ const metaDescription = truncate(product.description);
             <div class="product-gallery__thumbs" id="gallery-thumbs">
               {images.map((img, i) => (
                 <button class={`product-gallery__thumb ${i === 0 ? "active" : ""}`} data-img={mainUrls[i]} data-index={i} aria-label={`View image ${i + 1}`}>
-                  <Image src={asset(img)} alt={`${product.name} view ${i + 1}`} width={160} format="webp" loading="lazy" />
+                  <Image src={asset(img)} alt={isChart(img) ? `${product.name} size chart` : `${fullName} view ${i + 1}`} width={160} format="webp" loading="lazy" />
                 </button>
               ))}
             </div>
@@ -201,7 +203,11 @@ const metaDescription = truncate(product.description);
                 </button>
                 <div class="accordion__content">
                   <div class="accordion__content-inner">
-                    <p>Standard orders ship within 15–20 business days. Made-to-order items require 3–4 weeks for crafting. We ship worldwide via insured courier. Contact us for bulk or custom orders with specific delivery requirements.</p>
+                    {product.shippingInfo ? (
+                      <Fragment set:html={product.shippingInfo} />
+                    ) : (
+                      <p>Standard orders ship within 15–20 business days. Made-to-order items require 3–4 weeks for crafting. We ship worldwide via insured courier. Contact us for bulk or custom orders with specific delivery requirements.</p>
+                    )}
                   </div>
                 </div>
               </div>

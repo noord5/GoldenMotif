@@ -1,6 +1,22 @@
 /* Unique intro copy for each category landing page. Keep to claims the
    product data already supports (handcrafted, leather type, hardware). */
 export const categoryCopy = {
+  Shoes: {
+    h1: "Men's Leather Shoes",
+    title: "Premium Handmade Leather Dress Shoes for Men | Golden Motif",
+    description:
+      "Premium handmade full-grain leather dress shoes by Golden Motif: wingtip brogue derbies, cap toe oxfords and more, made to order in EU sizes 38 to 49.",
+    intro:
+      "Premium handmade men's dress shoes in full-grain genuine leather, from wingtip brogue derbies to cap toe oxfords. Every pair is made to order with a soft leather lining and a durable leather sole, in EU men's sizes 38 to 49. You can ask for your preferred leather colour before ordering.",
+  },
+  Boots: {
+    h1: "Men's Leather Boots",
+    title: "Premium Handmade Leather Boots for Men | Golden Motif",
+    description:
+      "Premium handmade leather and suede boots by Golden Motif: brogue ankle boots, chukkas and Chelsea boots, made to order in EU sizes 38 to 49.",
+    intro:
+      "Premium handmade men's boots in full-grain genuine leather and suede: lace-up brogue and plain toe ankle boots, chukkas and Chelsea boots. Every pair is made to order with a leather lining and a leather sole, in EU men's sizes 38 to 49. You can ask for your preferred leather colour before ordering.",
+  },
   Duffles: {
     h1: "Leather Duffle Bags",
     title: "Handmade Leather Duffle Bags | Golden Motif",
