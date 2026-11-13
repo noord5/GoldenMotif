@@ -2,7 +2,15 @@
   "name": "golden-motif",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
   "dependencies": {
-    "nodemailer": "^6.9.8"
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.11",
+    "nodemailer": "^6.9.8",
+    "sharp": "^0.35.5"
   }
 }

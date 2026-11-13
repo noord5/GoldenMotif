@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base
+  title="Page Not Found — Golden Motif"
+  description="The page you're looking for doesn't exist. Return to the Golden Motif home page."
+  path="/404/"
+  noindex={true}
+  noChrome={true}
+>
+  <main class="page-404">
+    <a href="/" class="navbar__logo mb-xl" aria-label="Golden Motif Home">
+      <img src="/Logo-GoldenMotif.png" alt="Golden Motif Logo" class="navbar__logo-img" style="height:50px; margin: 0 auto;" width="50" height="50" />
+    </a>
+    <div class="page-404__code">404</div>
+    <h1 class="page-404__title">Page Not Found</h1>
+    <p class="page-404__text">The page you're looking for may have been moved or doesn't exist. Let us guide you back.</p>
+    <div class="flex gap-md flex-wrap justify-center">
+      <a href="/" class="btn btn--primary">Return Home</a>
+      <a href="/catalogue/" class="btn btn--outline">Browse Catalogue</a>
+    </div>
+  </main>
+</Base>

@@ -1,0 +1,55 @@
+---
+import Base from "../../layouts/Base.astro";
+import CatalogueView from "../../components/CatalogueView.astro";
+import { products, categoryInfo, productUrl, categoryUrl, SITE } from "../../lib/products.js";
+import { categoryCopy } from "../../lib/categories.js";
+
+export function getStaticPaths() {
+  return categoryInfo.map((c) => ({ params: { category: c.slug }, props: { name: c.name } }));
+}
+
+const { name } = Astro.props;
+const copy = categoryCopy[name];
+const list = products.filter((p) => p.category === name);
+const url = `${SITE}${categoryUrl(name)}`;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: copy.h1,
+    url,
+    description: copy.description,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: list.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE}${productUrl(p)}`,
+        name: p.name,
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Catalogue", item: `${SITE}/catalogue/` },
+      { "@type": "ListItem", position: 3, name: copy.h1, item: url },
+    ],
+  },
+];
+---
+<Base
+  title={copy.title}
+  description={copy.description}
+  ogTitle={copy.title}
+  ogDescription={copy.description}
+  path={categoryUrl(name)}
+  active="catalogue"
+  jsonLd={jsonLd}
+>
+  <CatalogueView category={name} />
+  <script is:inline slot="scripts" src="/js/catalogue.js" defer></script>
+</Base>

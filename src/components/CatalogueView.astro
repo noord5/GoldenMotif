@@ -1,0 +1,58 @@
+---
+import ProductCard from "./ProductCard.astro";
+import { Icons } from "../lib/icons.js";
+import { products, categoryInfo, categoryUrl } from "../lib/products.js";
+import { categoryCopy } from "../lib/categories.js";
+
+const { category = null } = Astro.props;
+const list = category ? products.filter((p) => p.category === category) : products;
+const copy = category ? categoryCopy[category] : null;
+---
+<main id="main-content">
+  <section class="catalogue-header" aria-labelledby="catalogue-title">
+    <div class="container">
+      <span class="section-label">{category ? "Our Collection" : "Our Products"}</span>
+      <h1 class="catalogue-header__title" id="catalogue-title">{copy ? copy.h1 : "The Collection"}</h1>
+      <p class="catalogue-header__text">
+        {copy
+          ? copy.intro
+          : "Browse our complete range of handcrafted leather goods. Each piece is designed with intention and built to age with grace."}
+      </p>
+    </div>
+  </section>
+
+  <section class="section--sm">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-bar__chips" id="filter-chips" role="group" aria-label="Filter by category">
+          <a href="/catalogue/" class={`chip${!category ? " active" : ""}`}>All</a>
+          {categoryInfo.map((c) => (
+            <a href={categoryUrl(c.name)} class={`chip${category === c.name ? " active" : ""}`}>{c.name}</a>
+          ))}
+        </div>
+        <div class="filter-bar__controls">
+          <div class="filter-bar__search">
+            <span class="filter-bar__search-icon"><span data-icon="search" set:html={Icons.search}></span></span>
+            <input type="text" id="catalogue-search" class="form-input" placeholder="Search products..." aria-label="Search products by name" />
+          </div>
+          <select id="catalogue-sort" class="form-select filter-bar__sort" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest First</option>
+            <option value="name-az">Name A–Z</option>
+          </select>
+          <span class="filter-bar__count" id="catalogue-count">{list.length} product{list.length !== 1 ? "s" : ""}</span>
+        </div>
+      </div>
+
+      <div class="grid-products" id="catalogue-grid" role="list">
+        {list.map((p, i) => <ProductCard product={p} index={i} eager={i < 4} />)}
+      </div>
+
+      <div class="empty-state" id="catalogue-empty" style="grid-column: 1 / -1;" hidden>
+        <div class="empty-state__icon" set:html={Icons.search}></div>
+        <h3 class="empty-state__title">No products found</h3>
+        <p class="empty-state__text">Try adjusting your search term to discover our collection.</p>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import CatalogueView from "../../components/CatalogueView.astro";
+import { products, productUrl, SITE } from "../../lib/products.js";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "The Collection",
+    url: `${SITE}/catalogue/`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: products.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE}${productUrl(p)}`,
+        name: p.name,
+      })),
+    },
+  },
+];
+---
+<Base
+  title="Catalogue — Golden Motif Premium Leather Goods"
+  description="Browse Golden Motif's complete catalogue of handcrafted leather goods. Filter by category, search by name, and discover your next heirloom piece."
+  ogTitle="Catalogue — Golden Motif"
+  ogDescription="Explore our curated collection of premium leather goods."
+  path="/catalogue/"
+  active="catalogue"
+  jsonLd={jsonLd}
+>
+  <CatalogueView />
+  <script is:inline slot="scripts" src="/js/catalogue.js" defer></script>
+</Base>

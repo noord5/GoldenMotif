@@ -1,5 +1,300 @@
 {
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "traveler-duffle-bag"
+        }
+      ],
+      "destination": "/products/traveler-duffle-bag/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "leather-apron"
+        }
+      ],
+      "destination": "/products/leather-apron/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "leather-travel-bagpack"
+        }
+      ],
+      "destination": "/products/leather-travel-bagpack/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "ladies-leather-shoulderbag"
+        }
+      ],
+      "destination": "/products/ladies-leather-shoulderbag/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "wallet-clutch-for-ladies"
+        }
+      ],
+      "destination": "/products/wallet-clutch-for-ladies/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "ladies-evening-bag"
+        }
+      ],
+      "destination": "/products/ladies-evening-bag/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "urban-crossbody-bag"
+        }
+      ],
+      "destination": "/products/urban-crossbody-bag/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "Toiletries-pouch-bag-large"
+        }
+      ],
+      "destination": "/products/toiletries-pouch-bag-large/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "Toiletries-pouch-bag-medium"
+        }
+      ],
+      "destination": "/products/toiletries-pouch-bag-medium/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "mens-leather-jacket"
+        }
+      ],
+      "destination": "/products/mens-leather-jacket/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "mens-leather-wallet-brown"
+        }
+      ],
+      "destination": "/products/mens-leather-wallet-brown/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "mens-leather-wallet-black"
+        }
+      ],
+      "destination": "/products/mens-leather-wallet-black/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "mens-leather-belt"
+        }
+      ],
+      "destination": "/products/mens-leather-belt/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Aprons"
+        }
+      ],
+      "destination": "/catalogue/aprons/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Belts"
+        }
+      ],
+      "destination": "/catalogue/belts/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Clutches"
+        }
+      ],
+      "destination": "/catalogue/clutches/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Crossbody"
+        }
+      ],
+      "destination": "/catalogue/crossbody/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Duffles"
+        }
+      ],
+      "destination": "/catalogue/duffles/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Handbags"
+        }
+      ],
+      "destination": "/catalogue/handbags/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Jackets"
+        }
+      ],
+      "destination": "/catalogue/jackets/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Travel Bags"
+        }
+      ],
+      "destination": "/catalogue/travel-bags/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Wallets"
+        }
+      ],
+      "destination": "/catalogue/wallets/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "destination": "/catalogue/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue.html",
+      "destination": "/catalogue/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
   ]
 }

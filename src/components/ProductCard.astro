@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import { Icons } from "../lib/icons.js";
+import { asset, validImages } from "../lib/images.js";
+import { productUrl } from "../lib/products.js";
+import { priceText } from "../lib/price.js";
+const { product, index = 0, eager = false } = Astro.props;
+const delay = (index % 4) + 1;
+const first = validImages(product.images)[0];
+---
+<a
+  href={productUrl(product)}
+  class={`product-card reveal reveal-delay-${delay}`}
+  data-product-card
+  data-category={product.category}
+  data-name={product.name}
+  data-tags={(product.tags || []).join(" ")}
+  data-featured={product.featured ? "1" : "0"}
+  data-created={product.createdAt}
+>
+  <div class="product-card__image-wrap">
+    {first && (
+      <Image
+        src={asset(first)}
+        alt={product.name}
+        class="product-card__image"
+        widths={[360, 540, 720]}
+        sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 380px"
+        format="webp"
+        loading={eager ? "eager" : "lazy"}
+      />
+    )}
+    {product.featured && <span class="product-card__badge">Featured</span>}
+    <div class="product-card__actions">
+      <button class="product-card__action-btn" aria-label="Add to wishlist" onclick="event.preventDefault();" set:html={Icons.heart}></button>
+      <button class="product-card__action-btn" aria-label="Quick view" onclick="event.preventDefault();" set:html={Icons.eye}></button>
+    </div>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__category">{product.category}</span>
+    <h3 class="product-card__name">{product.name}</h3>
+    <span class="product-card__price" data-price-card data-pricing={JSON.stringify(product.pricing || {})}>{priceText(product)}</span>
+  </div>
+</a>

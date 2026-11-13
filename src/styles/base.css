@@ -3,8 +3,6 @@
    Body defaults, typography, global styles
    ======================================== */
 
-/* ── Google Fonts Import ── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
 body {
   font-family: var(--ff-body);
@@ -156,4 +154,9 @@ img.loaded {
 /* Ensure all regular images are always visible */
 img {
   opacity: 1;
+}
+
+/* Make the HTML hidden attribute win over component display rules */
+[hidden] {
+  display: none !important;
 }

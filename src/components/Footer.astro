@@ -1,0 +1,62 @@
+---
+import { Icons } from "../lib/icons.js";
+import { categoryInfo, categoryUrl } from "../lib/products.js";
+const year = new Date().getFullYear();
+---
+<div id="site-footer">
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="/" class="navbar__logo" aria-label="Golden Motif Home">
+            <span class="navbar__logo-text" style="color: var(--clr-text-inverse);">Golden <span>Motif</span></span>
+          </a>
+          <p class="footer__brand-text">Crafting timeless leather goods since our founding. Every piece tells a story of artisanship, quality, and enduring style.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/goldenmotif6/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram" set:html={Icons.instagram}></a>
+            <a href="https://www.facebook.com/profile.php?id=61589192874405" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook" set:html={Icons.facebook}></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <a href="/" class="footer__link">Home</a>
+          <a href="/catalogue/" class="footer__link">Catalogue</a>
+          <a href="/about/" class="footer__link">About Us</a>
+          <a href="/contact/" class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Collections</h4>
+          {categoryInfo.map((c) => (
+            <a href={categoryUrl(c.name)} class="footer__link">{c.name}</a>
+          ))}
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <Fragment set:html={Icons.mail} />
+            <span>info@GoldenMotif.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <Fragment set:html={Icons.phone} />
+            <span>+39 352 095 8384</span>
+          </div>
+          <div class="footer__contact-item">
+            <Fragment set:html={Icons.mapPin} />
+            <span>Milan, Italy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; {year} Golden Motif. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

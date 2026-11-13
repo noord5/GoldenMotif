@@ -1,0 +1,69 @@
+---
+import "../styles/reset.css";
+import "../styles/variables.css";
+import "../styles/base.css";
+import "../styles/layout.css";
+import "../styles/components.css";
+import "../styles/pages.css";
+import "../styles/responsive.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE } from "../lib/products.js";
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  active = "",
+  ogImage = `${SITE}/Logo-GoldenMotif.png`,
+  ogType = "website",
+  ogTitle = title,
+  ogDescription = description,
+  jsonLd = [],
+  noindex = false,
+  noChrome = false,
+} = Astro.props;
+const canonical = `${SITE}${path}`;
+const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Golden Motif" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" type="image/png" href="/Logo-GoldenMotif.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    />
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <slot name="head" />
+  </head>
+  <body>
+    {!noChrome && <Header active={active} />}
+    <slot />
+    {!noChrome && <Footer />}
+    <script is:inline src="/js/utils.js" defer></script>
+    <script is:inline src="/js/currency.js" defer></script>
+    <script is:inline src="/js/main.js" defer></script>
+    <slot name="scripts" />
+  </body>
+</html>

@@ -103,11 +103,32 @@
     display: none;
   }
 
+  /* The CTA lives inside the mobile menu; hiding it here stops it
+     overlapping the logo on narrow screens. */
+  .navbar__actions > .btn {
+    display: none;
+  }
+
+  .navbar__logo-text {
+    white-space: nowrap;
+    font-size: 1.25rem;
+  }
+
   .mobile-nav .currency-switcher--mobile {
     display: inline-flex;
   }
 
-  /* Hero */
+  /* Hero: full-bleed photo behind the text card instead of a cropped side image */
+  .hero {
+    background-size: cover;
+    background-position: 70% center;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .hero::before {
+    display: none;
+  }
 
   .hero__content {
     max-width: 100%;

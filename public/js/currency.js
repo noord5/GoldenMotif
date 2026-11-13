@@ -240,8 +240,40 @@ const CurrencyService = (() => {
     return parts.amountText;
   }
 
+  /* Re-render the prices that Astro rendered at build time (default EUR). */
+  function detailMarkup(parts) {
+    const amount = `<span class="product-info__price-amount${parts.isCodePrefix ? " is-code" : ""}" aria-label="${parts.amountText}"><span class="product-info__price-symbol">${parts.symbolText}</span><span class="product-info__price-value">${parts.valueText}</span></span>`;
+    if (parts.hasAmount && parts.noteText) {
+      return `${amount}<span class="product-info__price-note">${parts.noteText}</span>`;
+    }
+    if (parts.hasAmount) return amount;
+    return `<span class="product-info__price-note is-only">${parts.noteText}</span>`;
+  }
+
+  function readPricing(el) {
+    try {
+      return JSON.parse(el.dataset.pricing || "{}");
+    } catch {
+      return {};
+    }
+  }
+
+  function refreshPrices() {
+    document.querySelectorAll("[data-price-card]").forEach((el) => {
+      el.textContent = getDisplayPrice({ pricing: readPricing(el) });
+    });
+    const detail = document.querySelector("[data-price-detail]");
+    const section = document.getElementById("product-detail");
+    if (detail && section) {
+      detail.innerHTML = detailMarkup(getDisplayPriceParts({ pricing: readPricing(section) }));
+    }
+  }
+
+  window.addEventListener("currencychange", refreshPrices);
+
   return {
     init,
+    refreshPrices,
     setCurrency,
     getCurrentCurrency,
     getDisplayPrice,
