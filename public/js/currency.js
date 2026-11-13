@@ -2,7 +2,7 @@
    CURRENCY.JS - Golden Motif
    Fixed multi-currency display with:
    - EUR default fallback
-   - Geo-based auto currency (US/CA/EUR region)
+   - Auto currency from the browser language region (US/CA/EUR)
    - Manual override with persistence
    ======================================== */
 
@@ -10,7 +10,6 @@ const CurrencyService = (() => {
   const SUPPORTED = ["USD", "EUR", "CAD"];
   const DEFAULT_CURRENCY = "EUR";
   const STORAGE_KEY = "gm_currency";
-  const GEO_IP_URL = "https://ipapi.co/json/";
 
   function getCurrencyPresentation(currency) {
     switch (currency) {
@@ -82,30 +81,7 @@ const CurrencyService = (() => {
     }
   }
 
-  async function getCountryFromIp() {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 1800);
-
-    try {
-      const resp = await fetch(GEO_IP_URL, {
-        method: "GET",
-        cache: "no-store",
-        signal: controller.signal,
-      });
-      if (!resp.ok) return null;
-      const data = await resp.json();
-      return data.country_code || data.country || null;
-    } catch {
-      return null;
-    } finally {
-      clearTimeout(timeout);
-    }
-  }
-
   async function detectCurrency() {
-    const ipCountry = await getCountryFromIp();
-    if (ipCountry) return mapCountryToCurrency(ipCountry);
-
     const localeCountry = getRegionFromLocale();
     if (localeCountry) return mapCountryToCurrency(localeCountry);
 

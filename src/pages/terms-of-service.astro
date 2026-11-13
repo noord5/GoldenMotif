@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/products.js";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Terms of service", item: `${SITE}/terms-of-service/` },
+    ],
+  },
+];
+const list = "padding-left: 1.25rem; list-style: disc; margin: 0.75rem 0 1.5rem;";
+const h2 = "text-align:left; margin-top: 2rem;";
+---
+<Base
+  title="Terms of Service | Golden Motif"
+  description="The terms for using the Golden Motif website: how orders work through Etsy, product and price information, intellectual property and liability."
+  path="/terms-of-service/"
+  jsonLd={jsonLd}
+>
+  <main id="main-content">
+    <section class="catalogue-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Legal</span>
+        <h1 class="catalogue-header__title" id="page-title">Terms of Service</h1>
+        <p class="catalogue-header__text">Last updated: 13 November 2026</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container container--narrow">
+        <p>These terms apply when you use <strong>goldenmotif.com</strong>, operated by Golden Motif in Milan, Italy. By using the website you agree to them. If you do not agree, please do not use the site.</p>
+
+        <h2 class="section-title" style={h2}>Buying from us</h2>
+        <p>This website presents our products. Purchases are made on our Etsy shop, <a href="https://goldenmotifeu.etsy.com" target="_blank" rel="noopener">GoldenMotifEU</a>, and are governed by Etsy's terms and our shop policies. Our <a href="/shipping-returns/">Shipping &amp; Returns</a> page explains production times, delivery and returns. For wholesale, bulk or custom orders, <a href="/contact/">contact us</a>.</p>
+
+        <h2 class="section-title" style={h2}>Product and price information</h2>
+        <ul style={list}>
+          <li>We take care to describe and photograph our products accurately. Because our products are handmade from natural leather, colour, grain and finish can vary slightly from the photos.</li>
+          <li>Prices shown on this website in EUR, USD and CAD are for guidance and may differ from the price shown at checkout on Etsy. The price and currency shown at Etsy checkout apply to your order.</li>
+          <li>We may change products, prices and availability at any time.</li>
+          <li>Shoes and boots are made to order and can be made in a colour you request, subject to leather availability.</li>
+        </ul>
+
+        <h2 class="section-title" style={h2}>Intellectual property</h2>
+        <p>The text, photographs, logo and design of this website belong to Golden Motif or are used with permission. You may not copy, reproduce or use them for commercial purposes without our written permission.</p>
+
+        <h2 class="section-title" style={h2}>Using the website</h2>
+        <p>Please use the website lawfully. Do not try to disrupt it, gain unauthorised access, or send us harmful or misleading content through the contact form.</p>
+
+        <h2 class="section-title" style={h2}>Third-party links</h2>
+        <p>The website links to services we do not control, such as Etsy, Instagram and Facebook. We are not responsible for their content or policies.</p>
+
+        <h2 class="section-title" style={h2}>Our responsibility</h2>
+        <p>The website is provided "as is". We aim to keep it accurate and available, but we cannot guarantee it will always be free of errors or interruptions. To the extent allowed by law, we are not liable for indirect or consequential loss arising from use of the website. Nothing in these terms limits any rights you have as a consumer under the law that applies to you.</p>
+
+        <h2 class="section-title" style={h2}>Privacy</h2>
+        <p>How we handle personal data is explained in our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+
+        <h2 class="section-title" style={h2}>Changes to these terms</h2>
+        <p>We may update these terms from time to time. The date at the top shows when they were last changed. Continued use of the website means you accept the updated terms.</p>
+
+        <h2 class="section-title" style={h2}>Contact</h2>
+        <p>Questions about these terms? Email <a href="mailto:info@GoldenMotif.com">info@GoldenMotif.com</a>.</p>
+      </div>
+    </section>
+  </main>
+</Base>
